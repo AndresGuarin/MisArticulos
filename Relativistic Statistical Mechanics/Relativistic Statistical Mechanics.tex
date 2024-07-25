@@ -1,0 +1,146 @@
+\documentclass[11pt]{article}
+\usepackage[left=1in, right=1in, bottom=1in, top=1.5in]{geometry}
+\usepackage{hyperref}
+\usepackage{multirow}
+\usepackage{rotating}
+\usepackage{amsthm}   %for \theoremstyle, \begin{proof}
+\usepackage[mathscr]{euscript}
+\usepackage{amsmath}
+
+\theoremstyle{definition} % for put not italic letters
+\newtheorem{theorem}{Theorem}%[section]         % Teoremas
+\theoremstyle{definition} % for put not italic letters
+\newtheorem{lemma}{Lemma}%[section]         % Teoremas
+\hypersetup{colorlinks=true,linkcolor=blue,urlcolor=cyan}
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\newcommand{\partd}[2]{\frac{\partial #1}{\partial #2}}
+
+\begin{document}
+
+\title{Relativistic Statistical Mechanics}
+\author{Juan A. Guarín-Rojas \\
+María Fernanda Carvajal \\
+Carlos José Páez González \\
+Antonio Calixto Gutiérrez Piñerez }
+\date{\today}
+\maketitle
+
+\section{Transformation Laws Table}
+The following table (see table \ref{Tabla1}) shows the results achieved for some authors \cite{einstein}, \cite{planck}, \cite{Ott}, \cite{arzelies1965transformation}, \cite{Sutcliffe} and the results of the authors of this document for the transformation laws of the thermodynamic variables. It is shown the agreement of this work with \cite{Sutcliffe} and the partial agreement with \cite{Ott} and \cite{arzelies1965transformation}. 
+
+\begin{table}
+   \centering
+    \begin{tabular}{l|c|c|c|c}
+        \hline
+                    & \multirow{2}{*}{\textbf{Einstein, Planck}} & \multirow{2}{*}{\textbf{Ott, Arzelièz}} & \multirow{2}{*}{\textbf{Sutcliffe}}  & \multirow{2}{9em}{\textbf{Guarín-Carvajal-Páez-Gutiérrez}} \\ 
+                    & & & & \\ \hline
+        \multirow{2}{4em}{Pressure} & \multicolumn{2}{c|}{\multirow{2}{*}{$P=P_0$}} & \multirow{2}{5em}{$P_m=P_0$, $P_{th}=P_0\gamma^2$} & \multirow{2}{*}{$P=P_0\gamma^2$} \\	
+        & \multicolumn{2}{c|}{ } & & \\ \cline{1-5}
+        Volume      & \multicolumn{4}{c}{$V=V_0/\gamma$}                                  \\ 
+        Entropy     & \multicolumn{4}{c}{$S=S_0$}                                         \\ \cline{1-5}
+
+        Temperature & $T=T_0/\gamma$                  & \multicolumn{3}{c}{$T=T_0\gamma$}\\ %\cline{2-5}
+        Heat            & $\delta Q =  \delta Q_0/\gamma$  & \multicolumn{3}{c}{$\delta Q = \delta Q_0\gamma$} \\ %\cline{2-5}
+        Internal energy & $E=E_0\gamma+P_0V_0\gamma v^2/c^2$ & \multicolumn{3}{c}{$E=E_0\gamma$} \\ \hline
+        \multirow{2}{5em}{Helmholtz free energy} & \multirow{2}{*}{$F =   F_0/\gamma$} & \multicolumn{3}{c}{\multirow{2}{*}{$F=F_0\gamma$}} \\
+        & \\ \hline
+    \end{tabular}
+    \label{Tabla1}
+    \caption{Transformation of the thermodynamic quantities for different authors, adapted from \cite{Balescu}. A zero subindex indicates variables measured for a rest observer with the container of the gas. By convention $\gamma=1/\sqrt{1-v^2/c^2}$ is the Lorentz factor, $P_m$ is the \textit{mechanical pressure} and $P_{th}$ the \textit{thermodynamic} one (as discussed by \cite{Sutcliffe}).
+    }
+\end{table}
+
+
+%% Rotated
+\begin{sidewaystable}
+    \centering
+    \begin{tabular}{l|c|c|c|c}
+        \hline
+                    & \multirow{2}{*}{\textbf{Einstein, Planck}} & \multirow{2}{*}{\textbf{Ott, Arzelièz}} & \multirow{2}{*}{\textbf{Sutcliffe}}  & \textbf{Guarín-Carvajal-}\\ 
+                    & & &  &\textbf{Páez-Gutiérrez} \\ \hline
+        Pressure    & \multicolumn{2}{c|}{$P=P_0$}     & $P_m=P_0$, $P_{th}=P_0\gamma^2$ & $P=P_0\gamma^2$ \\ \cline{1-5}
+        Volume      & \multicolumn{4}{c}{$V=V_0/\gamma$}                                  \\ 
+        Entropy     & \multicolumn{4}{c}{$S=S_0$}                                         \\ \cline{1-5}
+
+        Temperature & $T=T_0/\gamma$                  & \multicolumn{3}{c}{$T=T_0\gamma$}\\ %\cline{2-5}
+        Heat            & $\delta Q =  \delta Q_0/\gamma$  & \multicolumn{3}{c}{$\delta Q = \delta Q_0\gamma$} \\ %\cline{2-5}
+        Internal energy & $E=E_0\gamma+P_0V_0\gamma v^2/c^2$ & \multicolumn{3}{c}{$E=E_0\gamma$} \\ %\cline{2-5}
+        Helmholtz free energy & $F =   F_0/\gamma$           & \multicolumn{3}{c}{$F=F_0\gamma$} \\
+        \hline
+    \end{tabular}
+    \label{Tabla1}
+    \caption{Transformation of the thermodynamic quantities for different authors, adapted from \cite{Balescu}. A zero subindex indicates variables measured for a rest observer with the container of the gas. By convention $\gamma=1/\sqrt{1-v^2/c^2}$, where $v$ is the velocity of the moving observer respecting to the rest observer, $P_m$ is the \textit{mechanical pressure} and $P_{th}$ the \textit{thermodynamic} one (as discussed by \cite{Sutcliffe}).
+    }
+\end{sidewaystable}
+
+\section{The invariance of entropy}
+\begin{theorem}
+The entropy $S=k_B\ln\Omega$ for a moving inertial observer, $K$,with respect to the container of an ideal gas ($N$ equal particles of same mass, elastic collisions between the particles and the walls, and non-interacting particles) is equal to the entropy $S_0=k_B\ln\Omega_0$ for a rest observer with the container, $K_0$. 
+
+Where $\Omega=\Omega(E,V,N)$ is the number of states function for $K$ depending on internal energy $E$, volume $V$, and number of particles $N$. Analogously, $\Omega_0=\Omega_0(E_0,V_0,N_0)$ is the number of states function for $K_0$.
+\end{theorem}
+
+\textit{Proof:}
+
+By definition:
+\be 
+\Omega=\frac{1}{N!}\frac{1}{h^{3N}}\underbrace{\int\limits_\mathscr{V} d^3r_1\cdots d^3r_N}_{\Omega_v}\,\underbrace{\int\limits_R d^3p_1 \cdots d^3 p_N}_{\Omega_p}\,,
+\ee
+where $h$ is the planck constant, and $\vec{r}_i$ and $\vec{p}_i$ are the ith position and momentum for $K$. Also, $\mathscr{V}$ is the volume space, $R$ is the momentum space defined as:
+\be 
+R = \left\{ (\vec{p}_1,...,\vec{p}_N) \mid \sum\limits_{i=1}^{N} c\sqrt{m^2c^2 + |\vec{p}_i|^2} = E \right\}\,.
+\ee
+
+By the non-interacting condition, the position $\vec{r}_i$ of each particle is independent one of the other. And therefore we can separate $\Omega_v$ as a product of integrals:
+\be 
+	\Omega_v = \left(\int\limits_V d^3 r_1\right)\cdots \left(\int\limits_V d^3 r_N\right) = \left(\int\limits_V d^3 r_1\right)^N = V^N\,.
+\ee
+
+\begin{lemma}
+The volume $V_0$ for the observer $K_0$ changed to $V_0/\gamma=V$ by a Lorentz transformation corresponding to a Lorentz Boost in one direction. $\gamma$ is the Lorentz factor.
+\end{lemma}
+
+By the previous lemma:
+\be 
+\Omega_v = \frac{V^N}{\gamma^N} = \frac{\Omega_{v0}}{\gamma^N}\,. \label{eq:omega_v}
+\ee
+
+By the other side, chosen an appropriate coordinate axis we can say that the Lorentz Boost occur in the $x-$axis. According to \cite{Landau} the transformation laws for momentum in this case are:
+\begin{eqnarray}
+	p_x &=& \gamma\left(g_x + \frac{v}{c^2}E_0\right) \,, \\
+	p_y &=& g_y \,, \\
+	p_z &=& g_z \,,
+\end{eqnarray}
+where $\vec{p}$ is the momentum of one particle for observer $K$, and $\vec{g}$ is the momentum of the same particle but for $K_0$. Besides, $v$ is the relative speed between the observers, $\gamma=1/\sqrt{1-v^2/c^2}$, $c$ is the speed of light, and $E_0=c\sqrt{m^2c^2+g^2}=mc^2\sqrt{1+\frac{g^2}{m^2c^2}}$ is the relativistic energy of the particle for $K_0$.
+
+We want to implement a change of variables from $p_i$ to $g_i$ in the momentum integrals. The Jacobian of the transformation is:
+\be 
+	J(\vec{g}) = \frac{\partial p_{x^i}}{\partial g_{x^i}} =  \begin{vmatrix}
+     \partd{p_x}{g_x} & \partd{p_x}{g_y} & \partd{p_x}{g_z}\\ 
+     0 & 1 & 0\\
+     0 & 0 & 1  
+\end{vmatrix} = \partd{p_x}{g_x} = \partd{ }{g_x}\left[ \gamma \left(g_x + \frac{v}{c^2}mc^2\sqrt{1+\frac{g^2}{m^2c^2}} \right)\right]\,.
+\ee
+
+Knowing that $g^2=g_x\,^2+g_y\,^2+g_z\,^2$:
+\be 
+	J(\vec{g}) = \gamma \left( 1 + \frac{v}{c^2}mc^2 \frac{g_x/(m^2c^2)}{\sqrt{1+\frac{g^2}{m^2c^2}}} \right) = \gamma \left( 1 + \frac{v}{c^2} \frac{g_x/m}{\sqrt{1+\frac{g^2}{m^2c^2}}} \right)\,.
+\ee
+
+Then, by implement this coordinate transformation for all the variables of the $N$ particles:
+\be 
+	\Omega_p = \int\limits_R d^3p_1 \cdots d^3p_N = \int\limits_R \gamma^N \prod\limits_{i=1}^{N}\left( 1 + \frac{v}{c^2} \frac{g_{x_i}/m}{\sqrt{1+\frac{g_i\,^2}{m^2c^2}}} \right) d^3 g_1 \cdots d^3g_N\,. \label{eq:omega_p}
+\ee
+
+By using equations \ref{eq:omega_v} and \ref{eq:omega_p} we have that the number of states function is:
+\be 
+	\Omega = \frac{1}{N!}\frac{1}{h^{3N}}\frac{V^N}{\gamma^N} \int\limits_R \gamma^N \prod\limits_{i=1}^{N}\left( 1 + \frac{v}{c^2} \frac{g_{x_i}/m}{\sqrt{1+\frac{g_i\,^2}{m^2c^2}}} \right) d^3 g_1 \cdots d^3g_N\,,
+\ee
+\be 
+	\Omega = \frac{1}{N!}\frac{1}{h^{3N}} V^N \int\limits_R \gamma^N \prod\limits_{i=1}^{N}\left( 1 + \frac{v}{c^2} \frac{g_{x_i}/m}{\sqrt{1+\frac{g_i\,^2}{m^2c^2}}} \right) d^3 g_1 \cdots d^3g_N\,
+\ee
+\bibliographystyle{unsrt}
+\bibliography{BibTex}
+
+\end{document}
