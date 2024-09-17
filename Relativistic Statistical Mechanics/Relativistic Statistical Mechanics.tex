@@ -32,18 +32,18 @@ Antonio Calixto Gutiérrez Piñerez }
 \date{\today}
 \maketitle
 
-\begin{center}
-	\textsc{Abstract} Hola
-\end{center}
+%\begin{center}
+%	\textsc{Abstract} Hola
+%\end{center}
 
 \section{Transformation Laws Table}
-The table \ref{Tabla1} shows the results achieved for some authors \cite{einstein, planck, Ott, arzelies1965transformation, Sutcliffe} and the results of the authors of this document for the transformation laws of the thermodynamic variables. It shows the agreement of this work with \cite{Sutcliffe} and the partial agreement with \cite{Ott, arzelies1965transformation}. 
+The table \ref{Tabla1} shows the results of the literature \cite{einstein, planck, Ott, arzelies1965transformation, Sutcliffe} and the results of this work for the transformation laws of the thermodynamic variables. Our results agree with \cite{Sutcliffe} and partial agree with \cite{Ott, arzelies1965transformation}. 
 
 \begin{table}[h!]
    \centering
     \begin{tabular}{l|c|c|c|c}
         \hline
-                    & \multirow{2}{*}{\textbf{Einstein, Planck}} & \multirow{2}{*}{\textbf{Ott, Arzelièz}} & \multirow{2}{*}{\textbf{Sutcliffe}}  & \multirow{2}{9em}{\textbf{Guarín-Carvajal-Páez-Gutiérrez}} \\ 
+                    & \multirow{2}{7em}{\textbf{Einstein, Planck}.  \cite{einstein, planck} } & \multirow{2}{7em}{\textbf{Ott, Arzelièz}. \cite{Ott, arzelies1965transformation} } & \multirow{2}{*}{\textbf{Sutcliffe} \cite{Sutcliffe}}  & \multirow{2}{9em}{\textbf{Guarín-Carvajal-Páez-Gutiérrez}} \\ 
                     & & & & \\ \hline
         \multirow{2}{4em}{Pressure} & \multicolumn{2}{c|}{\multirow{2}{*}{$P=P_0$}} & \multirow{2}{5em}{$P_m=P_0$, $P_{th}=P_0\gamma^2$} & \multirow{2}{*}{$P=P_0\gamma^2$} \\	
         & \multicolumn{2}{c|}{ } & & \\ \cline{1-5}
@@ -57,7 +57,7 @@ The table \ref{Tabla1} shows the results achieved for some authors \cite{einstei
         & \\ \hline
     \end{tabular}
     \label{Tabla1}
-    \caption{Transformation of the thermodynamic quantities for different authors, adapted from \cite{Balescu}. A zero subindex indicates variables measured for a rest observer with the container of the gas. By convention $\gamma=1/\sqrt{1-v^2/c^2}$ is the Lorentz factor, $P_m$ is the \textit{mechanical pressure} and $P_{th}$ the \textit{thermodynamic} one (as discussed by \cite{Sutcliffe}).
+    \caption{Transformation of the thermodynamic quantities for different authors. This table was adapted from \cite{Balescu}. A zero subindex indicates variables measured for a rest observer with the container of the gas, by convention $\gamma=1/\sqrt{1-v^2/c^2}$ is the Lorentz factor, $P_m$ is the \textit{mechanical pressure}, and $P_{th}$ the \textit{thermodynamic} one (as discussed by \cite{Sutcliffe}).
     }
 \end{table}
 
@@ -76,9 +76,9 @@ By definition
 \ee
 where $h$ is the planck constant, $\mathbf{r}_i$ and $\mathbf{p}_i$ are the $3-$position and $3-$momentum of the ith particle for $K$, $\mathscr{V}$ is the volume space, and $\mathcal{R}$ is the momentum space defined as
 \be 
-\mathcal{R} = \left\{ (\vec{p}_1,\dots,\vec{p}_N)\in\Re^{4N} \mid \vec{p}_i\cdot \vec{p}_i =-m^2  \text{  and  } \sum\limits_{i=1}^N \vec{p}_i = \vec{\mathscr{P}}\right\}\,,
+\mathcal{R} = \left\{ (\mathbf{g}_1,\dots,\mathbf{g}_N)\in\Re^{3N} \mid \sum\limits_{i=1}^{N} c\sqrt{m^2c^2+|\mathbf{g}_i|^2} = E_0 \right\} \,, \label{eq:R}
 \ee
-where $\vec{p}_i$ is the $4-$momentum of the ith particle, and $\vec{\mathscr{P}}$ is the total $4-$momentum of the system. $\vec{\mathscr{P}}$ is such that for $K_0$ its components are $(E_0/c^2,\mathbf{0})$. Here, $4-$vectors $\vec{u}$ such that $\vec{u}\cdot \vec{u}<0$ are timelike ones, and $m\vec{u}$ is the momentum of a particle with mass $m$ and $4-$velocity $\vec{u}$, which satisfies $\vec{u}\cdot \vec{u}=-1$. These are the conventions followed in \cite{gourgoulhon2013special}. Now, by the non-interacting condition, the position $\mathbf{r}_i$ of each particle is independent one of the other. And therefore we can separate $\Omega_v$ as a product of integrals
+where $\mathbf{g}_i$ is the $3-$momentum of the ith particle according to $K_0$. Now, by the non-interacting condition, the position $\mathbf{r}_i$ of each particle is independent one of the other. And therefore we can separate $\Omega_v$ as a product of integrals
 \be 
 	\Omega_v = \left(\int\limits_V d^3 r_1\right)\cdots \left(\int\limits_V d^3 r_N\right) = \left(\int\limits_V d^3 r_1\right)^N = V^N\,.
 \ee
@@ -132,11 +132,7 @@ Now, as integration is a linear operation,
 	\Omega_p =  \gamma^N \int\limits_\mathcal{R} d^3 g_1 \cdots d^3g_N  + \gamma^N \sum\limits_{k=1}^{N} \bigsum\limits_{1\leq i_1 < i_2 < \cdots < i_k\leq N} \frac{v^k}{c^k} \int\limits_\mathcal{R} \frac{g_{x_{i_1}}/(mc)}{\sqrt{1+\frac{g_{i_i}\,^2}{m^2c^2}}} \cdots \frac{g_{x_{i_k}}/(mc)}{\sqrt{1+\frac{g_{i_k}\,^2}{m^2c^2}}} d^3 g_1 \cdots d^3g_N\,. \label{eq:sums}
 \ee
 
-While integrating the second term we will find that if a point $(\mathbf{g}_1,\dots,\mathbf{g}_k)$ is in $\mathcal{R}$, then $(-\mathbf{g}_1,\dots,-\mathbf{g}_k)$ also will be in $\mathcal{R}$. This can be seen by viewing the momentum space $\mathcal{R}$ in the $K_0$ local coordinates
-\be 
-\mathcal{R} = \left\{ (\vec{p}_1,\dots,\vec{p}_N)\in \Re^{4N} \bigmid \vec{p}_i\cdot \vec{p}_i =-m^2 \text{ ,  } \sum\limits_{i=1}^{N} c\sqrt{m^2c^2+|\mathbf{g}_i|^2} = E_0 \text{ ,  and  } \sum\limits_{i=1}^N \mathbf{g}_i = 0  \right\}\,.
-\ee
-This shows the previous statement. And so $\mathcal{R}$ is composed by pairs of points $(\mathbf{g}_1,\dots,\mathbf{g}_N)$ and $(-\mathbf{g}_1,\dots,-\mathbf{g}_N)$ such that its respective contribution to the integral cancel out each other, this is 
+While integrating the second term we will find that if a point $(\mathbf{g}_1,\dots,\mathbf{g}_k)$ is in $\mathcal{R}$, then $(-\mathbf{g}_1,\dots,-\mathbf{g}_k)$ also will be in $\mathcal{R}$. This can be seen by looking in the definition of the momentum space \ref{eq:R}. Therefore, $\mathcal{R}$ is composed by pairs of points $(\mathbf{g}_1,\dots,\mathbf{g}_N)$ and $(-\mathbf{g}_1,\dots,-\mathbf{g}_N)$ such that its respective contribution to the integral cancel out each other, this is 
 \be 
 	\int\limits_\mathcal{R} \frac{g_{x_{i_1}}/(mc)}{\sqrt{1+\frac{g_{i_i}\,^2}{m^2c^2}}} \cdots \frac{g_{x_{i_k}}/(mc)}{\sqrt{1+\frac{g_{i_k}\,^2}{m^2c^2}}} d^3 g_1 \cdots d^3g_N = 0\,.
 \ee
@@ -145,10 +141,10 @@ Then only the first term in \ref{eq:sums} remains
 \	\Omega_p =  \gamma^N \int\limits_\mathcal{R} d^3 g_1 \cdots d^3g_N\,.
 \ee
 
-This integral is exactly the definition of $\Omega_p$ but for $K_0$. Hence $\Omega_p=\gamma^N \Omega_{p_0}$, and so $\Omega=\Omega_0$. This ends the proof.
+Regardless the factor $\gamma^N$, this integral is exactly the definition of $\Omega_p$ but for $K_0$. Hence $\Omega_p=\gamma^N \Omega_{p_0}$, and so $\Omega=\Omega_0$. This ends the proof.
 
-\section{Appendix}
-In local coordinates the components of the $4-$velocity $\vec{u}_i$ of a particle are $(\gamma(v_i),\gamma(v_i)\,\mathbf{v}_i/c)$, where $\mathbf{v}_i$ is the $3-$velocity of the particle seen by the local frame and $\gamma(v_i)=1/\sqrt{1-v_i\,^2/c^2}$. Besides, the components of its $4-$momentum $\vec{p}_i=m\vec{u}_i$ are $(E_i/c^2, \mathbf{p}_i/c)$, where $E_i$ is the relativistic energy of the particle seen by the local frame and $\mathbf{p}_i$ is the corresponding $3-$momentum seen by the local frame.
+%\section{Appendix}
+%In local coordinates the components of the $4-$velocity $\vec{u}_i$ of a particle are $(\gamma(v_i),\gamma(v_i)\,\mathbf{v}_i/c)$, where $\mathbf{v}_i$ is the $3-$velocity of the particle seen by the local frame and $\gamma(v_i)=1/\sqrt{1-v_i\,^2/c^2}$. Besides, the components of its $4-$momentum $\vec{p}_i=m\vec{u}_i$ are $(E_i/c^2, \mathbf{p}_i/c)$, where $E_i$ is the relativistic energy of the particle seen by the local frame and $\mathbf{p}_i$ is the corresponding $3-$momentum seen by the local frame.
 
 \bibliographystyle{unsrt}
 \bibliography{BibTex}
