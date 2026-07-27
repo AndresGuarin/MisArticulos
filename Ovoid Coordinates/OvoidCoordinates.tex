@@ -113,7 +113,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract} 
-In this work, some Cartesian ovoid coordinates are constructed to facilitate the description of ovoid spacetimes. In optics, Cartesian ovoids are highly useful for constructing optical systems without both geometric and chromatic aberrations. In astrophysics, these ovoids may be useful for describing objects with mass quadrupoles, such as merging binary stars. Then, ovoid spacetimes may be of interest to the scientific community. To construct ovoid coordinates, two special families of ovals are considered: confocal and triconfocal ovals. The first ones are ovals that share two foci, and the second ones are ovals that share three foci. In both cases, another family of curves is found such that any of its members intersects the respective family of ovals at right angles. Then, some 2D coordinates are inferred from these curves. These coordinates are extended to 3D, yielding cylindrical and rotational-like coordinates. From the Euclidean line element in ovoid coordinates, a metric ansatz is proposed. Next, this ansatz is used to obtain an exact solution of the Einstein field equations for a static anisotropic fluid.
+In this work, some Cartesian ovoid coordinates are constructed to facilitate the description of ovoid spacetimes. In optics, Cartesian ovoids are very useful for constructing optical systems without both geometric and chromatic aberrations. In astrophysics, these ovoids may be useful for describing objects with mass quadrupoles, such as merging binary stars. Then, ovoid spacetimes could be of interest to the scientific community. To construct ovoid coordinates, two special families of ovals are considered: confocal and triconfocal ovals. In the first family, the ovals share two foci, and in the second one, they share three. For both cases, another family of curves is found such that any of its members intersects the curves of its respective family of ovals at right angles. Then, some 2D coordinates are inferred from these families of curves. These coordinates are extended to 3D, yielding cylindrical and rotational-like coordinates. From the Euclidean line element in ovoid coordinates, a metric ansatz for describing a stationary ovoid spacetime is proposed. Next, this ansatz is used to obtain an exact solution of the Einstein field equations for a static anisotropic fluid.
 \end{abstract}
 
 %Remark: Pascal limaçon have not been reported before in the literature.
@@ -126,32 +126,36 @@ In this work, some Cartesian ovoid coordinates are constructed to facilitate the
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction} %Mencionar: *óvalos en la óptica, *aplicación en astrofísica
 \label{sec:intro}
-Cartesian ovals are a generalization of conic curves which have been prove to be useful to the optics. Originally, they are found as the solution to the problem of rigorous stigmatism, in which the light rays emitted from a punctual source are needed to be refracted to a single point throw an optical surface, which turns out to be a Cartesian ovoid. Over a plane containing the focal axis, one obtains a Cartesian oval as the interface between the two media separated by the optical surface. In recent years, they have been recover by Silva-Lora and Torres \cite{silva-Lora2020b, silva-Lora2021, silva-Lora2022, silva-Lora2023}. This authors use Cartesian ovoids to construct singlet lenses with aplanatism and lenses with many Cartesian surfaces with achromatic stigmatism, i.e., stigmatic systems free of chromatic aberration. This results allow to construct optical systems with better performance in forming high-resolution and colour images.
+Cartesian ovoids are quartic surfaces that have been proven to be useful in optics. They were found as a solution to the problem of rigorous stigmatism \cite{silva-Lora2020a}, in which light rays emitted from a point source must be refracted to a single point by an optical surface, which turns out to be a Cartesian ovoid \cite{descartes1637, southall1922}. In a plane containing the focal axis, one obtains a Cartesian oval as the intersection curve between the ovoid and the plane. In recent years, Cartesian ovoids have been recovered by Silva-Lora and Torres \cite{silva-Lora2020c, silva-Lora2021, silva-Lora2022}. These authors use ovoids to construct singlet lenses with aplanatism and compound lenses with achromatic stigmatism, i.e., stigmatic systems free of chromatic aberration. These promising results show the importance of ovoids in optics.
 
-Intrigued by that good results, this work proposes that Cartesian ovals can also be important in the study of curvilinear coordinates, in particular in the study of exact solutions to partial differential equations such as the Laplace equation and to the Einstein field equations of general relativity. It is known that the searching of new orthogonal coordinates lead to new solutions to partial differential equations by the use of the method of separation of variables \cite{moon1988field, moon1951cylindrical, moon1953some}. In general relativity, new system of coordinates could potentially lead to discover or rediscover exact solutions to the Einstein's field equations \cite{Krasinski1978}.
+Ovoids can also be considered as a specialization of the family of superconic surfaces	 \cite{Greynolds2002, Cho2016, silva-Lora2020b}. These surfaces satisfy an algebraic equation of $n$th degree that generalizes the Schwarzschild equation for conic surfaces\footnote{Hereafter, conic surfaces refer to the surfaces of revolution of conic sections.} \cite{schwarzschild1905conic, silva-Lora2020b}. They have been proposed for use in optical design. Ovoids are also close to conic surfaces in that their respective curves, ovals and conic sections, both have foci. However, ovals have three foci \cite{chasles1837, williamson1873, johnson1875bipolar}. When one of the foci goes to infinity, the Cartesian ovals become conic sections \cite{chasles1837, johnson1875bipolar}, or a portion of them, and when the third focus coincides with the first or the second, they become limaçons of Pascal \cite{johnson1875bipolar}. In this way, ovoids generalize conic surfaces. 
+%\footnote{See note XXI of \cite{chasles1837} and chapter XX of \cite{williamson1873}.}
 
-Cartesian ovals are also known in the literature for having a very rich set of properties. After their introduction in geometry by Descartes \cite{descartes1637-ch}, it is discover by Chasles that any oval can be described in terms of three foci \cite{chasles1837noteXXI}. By the same time, Quelet \cite{quelet1829} finds that ovals can be obtained by projecting the intersection curve of two cones with parallel axes over certain plane and that ovals are the involute of certain caustic by refraction of a circle. It is also known that the inversion of an oval on a circle is also an oval \cite{johnson1875bipolar}. Limaçons of Pascal are also a special case of ovals \cite{johnson1875bipolar}. Ovals are also related to the Weirtrass elliptic function $\wp(z)$ \cite{bacon1913}. As a bonus, Cartesian ovals appear in an early article by James Clerk Maxwell and as a part of an proposed exercise in the Principia mathematica of Newton. 
+In general relativity, symmetries are key to simplifying the description of spacetimes. The most common symmetries used to model astrophysical objects are spherical and axial symmetry. Models with these symmetries are widely found in the literature \cite{schwarzschild1916fluid,tolman1939static,wahlquist1968interior,chinea1990interior}. Within axially symmetric spacetimes, there are the ellipsoidal spacetimes formulated by Krasiński \cite{Krasinski1978}. Some authors have found solutions to the Einstein field equations based on Krasiński's work, recovering known solutions and obtaining new ones \cite{Racz1992,racz1998uniqueness, Zsigrai2003}. Hence, spherical and ellipsoidal symmetry have been useful to construct spacetimes in general relativity.
 
-This article is divided as follows:
+Since spheres and ellipsoids are special cases of Cartesian ovoids, one wonders if ovoids can also be useful to construct spacetimes in general relativity. As ovoids resemble deformed spheres, one would expect that an astrophysical object with this shape must have a mass quadrupole. This quadrupole would allow the object to emit gravitational waves in a perturbative regime \cite{misner2017gravitation}. Then, ovoids might be useful to describe the gravitational waves emitted by binary neutron stars during merger. As the stars coalesce, they get deformed and form some kind of funnel that could be modeled using an ovoid.
 
-%Hacer revisión de estilo para una revista de matemáticas
-\section{Descartes ovals} %Mencionar: *Cond. de existencia, *Ecs. bipolares (3er foco)
-\label{sec:Descartes ovals}
-A Descartes oval is defined as the locus of points in the plane for which the sum, $cr+c'r'$, of distances to two fixed points, $r$ and $r'$, multiplied by real constants, $c$ and $c'$, is constant \cite{descartes1637-ch, williamson1873chXX, johnson1875bipolar, mathcurve}. For the curve to exits, $c$ and $c'$ can not be simultaneously zero. Without loss of generality it can be considered $c\neq 0$, so that the equation of Descartes ovals can be written as
+The purpose of this work is to construct some ovoid spacetimes as candidates to model the gravitational field of an ovoid-shaped object. To that end, Sections \ref{sec:Cartesian ovals}-\ref{sec:characterization} introduce Cartesian ovals and ovoid coordinates. In Section \ref{sec:Cartesian ovals}, Cartesian ovals are treated as a three-foci curve, and their existence condition is shown. Sections \ref{sec:confocal} and \ref{sec:triconfocal} present confocal and triconfocal ovals and their respective orthogonal curves. Based on the curves discussed above, Section \ref{sec:characterization} formulates and characterizes ovoid coordinates. The transformation rules between ovoid and Cartesian coordinates, and the line elements in the new coordinates are obtained.
+
+In general relativity, symmetry can be described in terms of isometry groups and geometric invariants such as Killing vectors \cite{StephaniKramer2003}. This description applies to spherical, axial, and time-translation symmetries. To extend the notion of symmetry, Krasiński's pioneering work \cite{Krasinski1978} defines ellipsoidal spacetimes in terms of a congruence of observers and the induced metric. Whether isometries or Killing vectors can characterize these spacetimes remains an open question. For now, this work focuses on proposing a metric ansatz rather than characterizing its symmetry. Based on Krasiński's ideas, Section \ref{sec:ovoid spacetimes} defines ovoid spacetimes using the induced metric on confocal ovoids. In Section \ref{sec:solutions}, exact solutions to the Einstein field equations for a static anisotropic fluid in an ovoid spacetime are obtained.
+
+
+\section{Cartesian ovals} %Mencionar: *Cond. de existencia, *Ecs. bipolares (3er foco)
+\label{sec:Cartesian ovals}
+A Cartesian oval is defined as the locus of points in the plane for which the sum, $cr+c'r'$, of distances to two fixed points, $r$ and $r'$, multiplied by real constants, $c$ and $c'$, is constant \cite{descartes1637, williamson1873, johnson1875bipolar, mathcurve}. For the curve to exist, $c$ and $c'$ can not be simultaneously zero. Without loss of generality, it can be considered $c\neq 0$, so that the equation of Cartesian ovals can be written as
 \be 
 	r+ar' = u\,, \label{eq:oval}
 \ee
-with $a$ and $u$ real constants. A well known result about ovals is that there exits a set of three distinguishable bipolar equations that give rise to the same curve \cite{chasles1837noteXXI, williamson1873chXX, johnson1875bipolar}. In this case, the additional two equations to equation \ref{eq:oval} are
+with $a$ and $u$ real constants. A well-known result about ovals is that there exists a set of three distinguishable bipolar equations that give rise to the same curve \cite{chasles1837, williamson1873, johnson1875bipolar}. In this case, the additional two equations to equation \ref{eq:oval} are
 \be 
 	\sign{(\tau(1-a^2))}ar''+\frac{u}{\tau}r=(\tau+\xi)\,, \label{eq:oval2}
 \ee
 \be
 	\sign{(\tau(1-a^2))}r''-\frac{u}{\tau}r'=a\xi\,, \label{eq:oval3}
 \ee
-where the two fixed points are considered to be in the $x$-axis of the $xy$-plane, so that if the fixed point related to $r$ is at the origin then the other one is at $(0,\tau)$, with $\tau$ a real constant, the real constant $\xi$ is equals to $\frac{u^2-\tau^2}{(1-a^2)\tau}$, $r''$ is the distance to a third fixed point at $(0,\tau+\xi)$, and $\sign(x):=x/|x|$ is the sign function. This third fixed point is considered as a \textit{third focus} \cite{williamson1873chXX, mathcurve}, so that any oval is related to three foci. Equations \ref{eq:oval2} and \ref{eq:oval3} give rise to the same curve as equation \ref{eq:oval} provided that $\xi$ is not infinite and that $\tau+\xi$ is not zero, in which cases one, or both, of the equations \ref{eq:oval2} and \ref{eq:oval3} become undefined.
+where the two fixed points are considered to be in the $x$-axis of the $xy$-plane, so that if the fixed point related to $r$ is at the origin then the other one is at $(0,\tau)$, with $\tau$ a real constant, the real constant $\xi$ is equals to $\frac{u^2-\tau^2}{(1-a^2)\tau}$, $r''$ is the distance to a third fixed point at $(0,\tau+\xi)$, and $\sign(x):=x/|x|$ is the sign function. This third fixed point is considered as a \textit{third focus} \cite{williamson1873, mathcurve}, so that any oval is related to three foci. Equations \ref{eq:oval2} and \ref{eq:oval3} give rise to the same curve as equation \ref{eq:oval} provided that $\xi$ is not infinite and that $\tau+\xi$ is not zero, in which cases one, or both, of the equations \ref{eq:oval2} and \ref{eq:oval3} become undefined.
 
-
-A less known result, not typically mentioned, is that the curve given by the equation \ref{eq:oval} is not empty when %$u\in\mathcal{D}_u$, where $\mathcal{D}_u$ is given by
+A less well-known result, not typically mentioned, is that the curve given by the equation \ref{eq:oval} is not empty when %$u\in\mathcal{D}_u$, where $\mathcal{D}_u$ is given by
 \be
 	u \geq \text{min}{(1,a)}|\tau| \,\,\text{ if }\,\,a>-1\,, \label{eq:cond_c1}
 \ee
@@ -161,9 +165,10 @@ A less known result, not typically mentioned, is that the curve given by the equ
 \be
 	-|\tau| \leq u \leq |\tau| \,\,\text{ if }\,\,a=-1\,, \label{eq:cond_c3}
 \ee
-where $\text{min}{(1,a)}$ is the minimum value between $1$ and $a$. These are the existence conditions of ovals. In the case $a>-1$, these results coincides with \cite{mathcurve}. In the appendix \ref{sec:appendix} it is shown a proof of these conditions. Although the existence conditions are only explicitly mentioned in \cite{mathcurve}, as far as the authors know, they are in fact implicit in the work of Descartes \cite{descartes1637-ch}. As ovals are classified in genres, based on the procedure to draw them, a certain oval may exits only if it is possible to construct them with ruler and compass, i.e., if the required distances and radii are positive, if the intersections between lines exists, if the lines can be drawn, etc.
+where $\text{min}{(1, a)}$ is the minimum value between $1$ and $a$. These are the conditions for the existence of ovals. In the case $a>-1$, these results coincide with \cite{mathcurve}. In the appendix \ref{sec:appendix}, a proof of these conditions is shown. Although the existence conditions are only explicitly mentioned in \cite{mathcurve}, as far as the authors know, they are in fact implicit in the work of Descartes \cite{descartes1637}. As ovals are classified in genres based on the procedure to draw them, a certain oval may exist only if it is possible to construct it with ruler and compass, i.e., if the required distances and radii are positive, if the intersections between lines exist, if the lines can be drawn, etc.
 
 \section{Orthogonal systems of coordinates based on ovals} %2D (and 3D coordinates)
+\label{sec:orthogonal coordinates}
 Consider the rectangular Cartesian coordinates $x,y$ in the $xy$-plane. Any two coordinates $q^1,q^2$, related to the rectangular ones by the equations $x=x(q^1,q^2)$ and $y=y(q^1,q^2)$, are said to be orthogonal if their metric coefficients,
 \be
 	g_{ij} = \partd{\mb{r}}{q^i} \cdot \partd{\mb{r}}{q^j}\,, \label{eq:def g_ij}
@@ -179,6 +184,7 @@ This condition is equivalent to say that the $q$-constant curves, called the coo
 If, in addition, these families $\mathscr{F}_1,\mathscr{F}_2$ can be seen as the level curves of two functions $f,g$, respectively, then $r=f(x,y)$ and $s=g(x,y)$ are the relations between Cartesian and $rs$-coordinates. Their inversion, $x=x(r,s), y=y(r,s)$, would allow to compute the metric coefficients in terms of $r$ and $s$. To construct \textit{oval} coordinates, one may consider that one, or both, of the coordinate curves are ovals. In the next sections, two special families of ovals are considered: confocal ovals and triconfocal ovals. With them, various orthogonal coordinates will be built.
 
 \section{Confocal ovals and synecdolas} % *Def. sinécdolas, *Mapeo inverso [de (u,v) a (x,y)], *Mencionar caso a=1, *Hacer caso a=1/3
+\label{sec:confocal}
 Consider the set of ovals defined by the level curves of the function
 \be
 	f(x,y)=\sqrt{x^2+y^2}+a \sqrt{(x-\tau)^2+y^2}\,,
@@ -221,7 +227,7 @@ By substituting $t=\ln s$ with this solution of $s$, one obtains the desired rel
 
 \section{Triconfocal ovals} % *Def. familia de óvalos triconfocales, *Mapeo inverso, *Caso especial de coordenadas de caracolas de Pascal
 \label{sec:triconfocal}
-In the section \ref{sec:Descartes ovals}, it was mentioned that any oval is related to three special points called foci. Here we are going to use this fact to construct two families of curves that intersect each other at right angles. To see this, consider the equation that relates $\xi$ to the other parameters of the oval
+In the section \ref{sec:Cartesian ovals}, it was mentioned that any oval is related to three special points called foci. Here we are going to use this fact to construct two families of curves that intersect each other at right angles. To see this, consider the equation that relates $\xi$ to the other parameters of the oval
 \be
 	\xi = \frac{u^2-\tau^2}{(1-a^2)\tau}\,.
 \ee
@@ -236,7 +242,7 @@ Squaring both sides and solving for $a$ gives $a_{\pm} = \frac{-rr'\pm \tau r''}
 \be
 	\beta = -\frac{\sqrt{x^2+y^2}\sqrt{(x-\tau)^2+y^2} + \tau \sqrt{(x-\tau-\xi)^2+y^2}}{(x-\tau)^2+y^2+\xi\tau}\,. \label{eq:beta}
 \ee
-The $\alpha$- and $\beta$-constant curves are the set of ovals that share the same three foci, and hence they are called as \textit{triconfocal} ovals. It is straight forward to show that this curves mutually orthogonally intersect each other, i.e., that $\nabla \alpha\cdot \nabla\beta = 0$. The property that triconfocal ovals intersect at right angles is also reported by Williamson in \cite{williamson1873chXX}.
+The $\alpha$- and $\beta$-constant curves are the set of ovals that share the same three foci, and hence they are called as \textit{triconfocal} ovals. It is straight forward to show that this curves mutually orthogonally intersect each other, i.e., that $\nabla \alpha\cdot \nabla\beta = 0$. The property that triconfocal ovals intersect at right angles is also reported by Williamson in \cite{williamson1873}.
 
 To find the inverse relations, $x=x(\alpha,\beta)$ and $y=y(\alpha,\beta)$, it is convenient to write
 \be
@@ -340,16 +346,16 @@ is the value of $\alpha(x,y;\xi,1)$ at $x=x_0$ and $y=0$, with $x_0$ being so th
 %	\mathcal{D}_{\beta}^{\xi,\tau} = \mathcal{D}_\alpha^{-\xi,-\tau}
 %\ee
 
-
 \begin{figure}
 	\centering
 	\includegraphics[width=0.55\linewidth]{images/descartes_oval.png}
-	\caption{A Descartes oval shown over an $xy$-plane choosen so that the foci lay on the $x$-axis. The equation of the curve is $r+ar'=u$, with $\tau=1$, $a=0.7$ and $u=1.2$.}	
-	%\caption{A Descartes oval with $\tau=1$, $a=0.7$ and $u=1.2$. The distances, angles, and other tags are also shown.}
+	\caption{A Cartesian oval shown over an $xy$-plane centered at the focus $F$. The equation of the curve is $r+ar'=u$, with $a=0.7$ and $u=1.2$. The focal distance is $\tau=1$.}	
+	%\caption{A Cartesian oval with $\tau=1$, $a=0.7$ and $u=1.2$. The distances, angles, and other tags are also shown.}
 	\label{fig:oval}
 \end{figure}
 
 \section{Characterization of the various orthogonal coordinates} %*Base coordenada, *Factores de escala, *elemento de línea
+\label{sec:characterization}
 Confocal and triconfocal ovals induced certain systems of coordinates in which the coordinate curves are one of these class of ovals. In this section we will characterize these coordinates in terms of their metric coefficients and their basis vectors. From the methods mentioned in \cite{moon1988field}, 3D coordinates will be constructed from the 2D coordinates by ``rotating'' or ``translating'' the coordinates. This process results in cylindrical- and rotational-like coordinates, respectively. %%CORRECCIÓN: Añadir referencias a los otros artículos de Moon y Spencer
 
 Consider confocal ovals as $u$-constant curves and synecdolas as $v$-constant ones. The quantities $u$ and $v$ define a set of \textit{confocal oval 2D coordinates}, or simply \textit{oval coordinates}. The metric coefficients are described in terms of the functions $x(u,v)\equiv \X(u,v)$ and $y(u,v)\equiv\Y(u,v)$ as
@@ -453,7 +459,7 @@ This coordinates may be called as \textit{triconfocal ovoid 3D coordinates}.
 	\label{tab:existence}
 \end{table}
 
-%% CORRECCIÓN: Añadir una mensión a la tabla, asicomo añadir imágenes de las curvas y superficies coordenadas. Discutir acerca de estas imágenes
+%% CORRECCIÓN: Añadir una mensión a la tabla, así como añadir imágenes de las curvas y superficies coordenadas. Discutir acerca de estas imágenes
 
 % (Listo!) Oval coordinates (2D)
 % (Listo!) Cylindrical ovoid coordinates (3D)
@@ -464,6 +470,7 @@ This coordinates may be called as \textit{triconfocal ovoid 3D coordinates}.
 % (Listo!) Triconfocal (Rotational) ovoid coordinates (3D)
 
 \section{Ovoid spacetimes} %*Talk a little about the Krasinski method *Propose the metric ansatz for Conformally stationary (biconfocal) triconfocal spacetimes
+\label{sec:ovoid spacetimes}
 The symmetries in a spacetime are usually characterized by geometric invariants such as Killing vectors. These vector can be associated to a group of isometries isomorphic to a certain group such as $SO(2)$ or $SO(3)$. In this sense, it is natural to define an axially symmetric spacetime or a spherically symmetric spacetime as one in which there is a subgroup $G$ of the group of isometries\footnote{$\text{Iso}(M,\mc{G}):=\cub{\phi:M\to M\mid \phi^{*}\mc{G}=\mc{G}}$ endowed with the composition operation, where $M$ is the manifold, $\mc{G}$ is the metric tensor and $\phi^{*}$ is the pushforward of $\phi$.} which is isomorphic to $SO(2)$ or $SO(3)$, respectively. However, for other spacetimes such as ellipsoidal or ovoid spacetimes, there is not such a natural definition since there is not a group related to ellipsoids or ovoids. The best one can do is to propose a metric ansatz that encapsulates some desirable features. One of such may be that, for example, there exits some congruence of observers in which the induced metric over their orthogonal hypersurfaces resembles or be similar to the metric over ellipsoids or ovoids. Such proposal is the one of Krasiński \cite{Krasinski1978}, which construct an stationary oblate-ellipsoidal metric ansatz. Here, a stationary ovoid metric ansatz will be built based on the same procedure. %%CORRECCIÓN: Añadir referencias al libro de Sthefani-Kramer-...
 
 In order to do that, consider a congruence of observers characterized by the four-velocity $w= U\partial_t + V \partial_\phi$. As the spacetime is consider to be stationary and axially symmetric, there exist two conmuting killing vector fields, which here are considered as $\partial_t$ and $\partial_\phi$. The projection of the metric tensor over the orthogonal hypersurfaces of $w$ is taken as
@@ -492,10 +499,11 @@ which is a suitable metric ansatz to describe static spherically symmetric space
 
 %%CORRECCIÓN: Revisar definiciones de dPhi, añadir g_00 y g_03
 
-\section{Anysotropic fluid solutions to the Einstein's field equations}
-The relevance to define spacetimes with new symmetries is that it opens the possibility to obtain new exact solutions to the Einstein field equations. If it is a vacuum solution, it can be interpreted as the solution for a black hole ore one part of it can be interpreted as the external solution for an object with ovoid symmetry. And, if it is a fluid solution, one would obtain a model for the gravitational field inside an object with ovoid symmetry. Both cases are very interesting and stimulating. Sadly, the Einstein field equations get too complicated. For this article, only a static anysotropic fluid solution is obtained.
+\section{Anisotropic fluid solutions to the Einstein's field equations}
+\label{sec:solutions}
+The relevance to define spacetimes with new symmetries is that it opens the possibility to obtain new exact solutions to the Einstein field equations. If it is a vacuum solution, it can be interpreted as the solution for a black hole ore one part of it can be interpreted as the external solution for an object with ovoid symmetry. And, if it is a fluid solution, one would obtain a model for the gravitational field inside an object with ovoid symmetry. Both cases are very interesting and stimulating. Sadly, the Einstein field equations get too complicated. For this article, only a static anisotropic fluid solution is obtained.
 
-Consider a static ovoid spacetime govern by the metric $\mathcal{G}_{static}$. A suitable stress-energy tensor for an static anysotropic fluid is
+Consider a static ovoid spacetime govern by the metric $\mathcal{G}_{static}$. A suitable stress-energy tensor for an static anisotropic fluid is
 \be
 	\mathcal{T} = T^{ab} \partial_a\otimes \partial_b = (\mu+P_1)w\otimes w+P_1\mathcal{G}_{static}^{-1} + (P_2-P_1) e_2\otimes e_2 + (P_3-P_1)e_3\otimes e_3\,,
 \ee
@@ -568,7 +576,7 @@ These were obtained by expressing the derivatives of $\X$ and $\Y$ in terms of t
 \section{Appendix}
 \label{sec:appendix}
 
-\subsection{Existence condition for Descartes ovals}
+\subsection{Existence condition for Cartesian ovals}
 The existence conditions of ovals may be simplified by introducing the set $\mathcal{D}_u$ given by
 \be
 	\mathcal{D}_u(a;\tau) := \begin{dcases}  
