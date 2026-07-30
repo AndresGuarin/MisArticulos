@@ -37,6 +37,7 @@
 % Functions
 \def\arcsinh{{\rm arcsinh}}
 \def\sign{{\rm sign}}
+\def\min{{\rm min}}
 
 % Expressions
 \def\X{\Lambda}
@@ -142,30 +143,113 @@ In general relativity, symmetry can be described in terms of isometry groups and
 
 \section{Cartesian ovals} %Mencionar: *Cond. de existencia, *Ecs. bipolares (3er foco)
 \label{sec:Cartesian ovals}
-A Cartesian oval is defined as the locus of points in the plane for which the sum, $cr+c'r'$, of distances to two fixed points, $r$ and $r'$, multiplied by real constants, $c$ and $c'$, is constant \cite{descartes1637, williamson1873, johnson1875bipolar, mathcurve}. For the curve to exist, $c$ and $c'$ can not be simultaneously zero. Without loss of generality, it can be considered $c\neq 0$, so that the equation of Cartesian ovals can be written as
+A Cartesian oval is the locus of points $M$ such that $cr+cr’$ is constant, where $r$ and $r’$ are the distances from $M$ to two fixed points $F$ and $F’$, called foci, and $c$ and $c’$ are real constants \cite{williamson1873, johnson1875bipolar}. Since $c$ and $c’$ cannot both be zero, one can assume $c\neq 0$ without loss of generality. Hence, the equation satisfied by Cartesian ovals can be written as
 \be 
 	r+ar' = u\,, \label{eq:oval}
 \ee
-with $a$ and $u$ real constants. A well-known result about ovals is that there exists a set of three distinguishable bipolar equations that give rise to the same curve \cite{chasles1837, williamson1873, johnson1875bipolar}. In this case, the additional two equations to equation \ref{eq:oval} are
-\be 
-	\sign{(\tau(1-a^2))}ar''+\frac{u}{\tau}r=(\tau+\xi)\,, \label{eq:oval2}
-\ee
-\be
-	\sign{(\tau(1-a^2))}r''-\frac{u}{\tau}r'=a\xi\,, \label{eq:oval3}
-\ee
-where the two fixed points are considered to be in the $x$-axis of the $xy$-plane, so that if the fixed point related to $r$ is at the origin then the other one is at $(0,\tau)$, with $\tau$ a real constant, the real constant $\xi$ is equals to $\frac{u^2-\tau^2}{(1-a^2)\tau}$, $r''$ is the distance to a third fixed point at $(0,\tau+\xi)$, and $\sign(x):=x/|x|$ is the sign function. This third fixed point is considered as a \textit{third focus} \cite{williamson1873, mathcurve}, so that any oval is related to three foci. Equations \ref{eq:oval2} and \ref{eq:oval3} give rise to the same curve as equation \ref{eq:oval} provided that $\xi$ is not infinite and that $\tau+\xi$ is not zero, in which cases one, or both, of the equations \ref{eq:oval2} and \ref{eq:oval3} become undefined.
+where $a$ and $u$ are real constants. 
 
-A less well-known result, not typically mentioned, is that the curve given by the equation \ref{eq:oval} is not empty when %$u\in\mathcal{D}_u$, where $\mathcal{D}_u$ is given by
+For any oval with known foci $F$ and $F'$, there exists a third point $F''$ such that the oval satisfies an analog of equation \ref{eq:oval} of the form $r+\alpha r''=\beta$, where $r$ and $r''$ are the distances from $M$ to $F$ and $F''$, and $\alpha$ and $\beta$ are real constants. This point lies on the line through $F$ and $F'$ and is called the third focus. 
+
+The existence of this point was first noted by Chasles; see Note XXI in \cite{chasles1837}. In \cite{chasles1837, williamson1873}, geometric constructions are used to obtain the third focus. Here, an algebraic approach that recovers the results of \cite{johnson1875bipolar} is presented.
+
+To determine the position of the third focus, consider an $xy$-coordinate system centered at $F$ with $F'$ at $(\tau,0)$, where $\tau\in\Re$, as shown in Fig. \ref{fig:oval}. In this coordinate system, equation \ref{eq:oval} can be written as 
 \be
-	u \geq \text{min}{(1,a)}|\tau| \,\,\text{ if }\,\,a>-1\,, \label{eq:cond_c1}
+	\sqrt{x^2+y^2}+a \sqrt{(x-\tau)^2+y^2}=u\,. \label{eq:oval xy-cord}
+\ee
+In polar coordinates, related to $x$ and $y$ by $x=r\cos\theta$ and $y=r\sin\theta$, this equation becomes $r+\sqrt{r^2-2r\tau\cos\theta+\tau^2}=u$. Consider that $F''$ is located at $(\tau+\xi,0)$ where $\xi\in\Re$. By definition, the distance from $M$ to $F''$ is
+\begin{align}
+	r'' &= \sqrt{(x-\tau-\xi)^2+y^2}\,, \\
+		&= \sqrt{r^2-2r(\tau+\xi)\cos\theta+(\tau+\xi)^2}\,.
+\end{align}
+From the last equation, one obtains $-2r\tau\cos\theta=\tau(r''^2-r^2-(\tau+\xi)^2)/(\tau+\xi)$. Hence, equation \ref{eq:oval xy-cord} in polar coordinates becomes
+\be
+	r+\sqrt{r^2+\frac{\tau}{\tau+\xi}(r''^2-r^2-(\tau+\xi)^2)+\tau^2}=u\,.
+\ee
+This equation can be solved for $r''^2$, yielding
+\be
+	r''^2 = \frac{(u-r)^2(\tau+\xi)}{a^2\tau}+(\tau+\xi)\xi -\frac{r^2\xi}{\tau}\,.
+\ee
+Now, one can group the terms in $r$ and complete the square on the right-hand side of the equation as
+\be
+	r''^2=\frac{1}{a^2\tau}\left(\tau+(1-a^2)\xi\right)\left(r-\frac{u(\tau+\xi)}{\tau+(1-a^2)\xi}\right)^2 + \frac{\xi(\xi+\tau)}{\xi+\tau/(1-a^2)}\left(\xi-\frac{u^2-\tau^2}{(1-a^2)\tau}\right)\,. \label{eq:def xi}
+\ee
+%\be
+%	r''^2=\frac{\tau+\xi}{a^2\tau}\left(1-\frac{a^2\xi}{\tau+\xi}\right)\left(r-\frac{u(\tau+\xi)}{\tau+(1-a^2)\xi}\right)^2 + \frac{\xi(\xi+\tau)}{\xi+\tau/(1-a^2)}\left(\xi-\frac{u^2-\tau^2}{(1-a^2)\tau}\right)\,. \label{eq:def xi}
+%\ee
+The second term is zero when $\xi=0$, $\xi=-\tau$, and $\xi=\frac{u^2-\tau^2}{(1-a^2)\tau}$. For these values of $\xi$, the relation between $r''$ and $r$ is linear. Replacing $\xi$ with $0$, $-\tau$, and $\frac{u^2-\tau^2}{(1-a^2)\tau}$, equation \ref{eq:def xi} becomes, respectively,
+\be
+	r''^2 = \frac{(u-r)^2}{a^2}\,,
 \ee
 \be
-	u \leq |\tau|\,\, \text{ if }\,\,a<-1\,, \label{eq:cond_c2}
+	r''^2 = r^2\,,
 \ee
 \be
-	-|\tau| \leq u \leq |\tau| \,\,\text{ if }\,\,a=-1\,, \label{eq:cond_c3}
+	r''^2 = \frac{u^2}{a^2\tau^2}\rob{r-\frac{u^2-a^2\tau^2}{u(1-a^2)}}^2\,. \label{eq:oval^2 third_focus}
 \ee
-where $\text{min}{(1, a)}$ is the minimum value between $1$ and $a$. These are the conditions for the existence of ovals. In the case $a>-1$, these results coincide with \cite{mathcurve}. In the appendix \ref{sec:appendix}, a proof of these conditions is shown. Although the existence conditions are only explicitly mentioned in \cite{mathcurve}, as far as the authors know, they are in fact implicit in the work of Descartes \cite{descartes1637}. As ovals are classified in genres based on the procedure to draw them, a certain oval may exist only if it is possible to construct it with ruler and compass, i.e., if the required distances and radii are positive, if the intersections between lines exist, if the lines can be drawn, etc.
+Thus, the known cases are recovered, and one new result is obtained. The first case, $\xi=0$, corresponds to $F''$ coinciding with $F'$, while the second, $\xi=-\tau$, corresponds to $F''$ coinciding with $F$. The third case is the only genuinely new result. In this case, $F''$ is located at $(\frac{u^2-a^2\tau^2}{(1-a^2)\tau},0)$. By convention, the expression for $\xi$ is henceforth fixed as
+\be
+	\xi = \frac{u^2-\tau^2}{(1-a^2)\tau}\,. \label{eq:def xi}
+\ee
+
+From equation \ref{eq:oval^2 third_focus}, it follows an equation of the form $r''=\pm c_1(r-c_2)$, where $c_1$ and $c_2$ are constants. The $\pm$ sign must be replaced with the sign of $\tau(1-a^2)$ so that the resulting curve coincides with the curve defined by equation \ref{eq:oval}, as one can verify in plotting software. The resulting linear equation in $r$ and $r''$ is therefore
+\be
+	\sign(\tau(1-a^2)) ar''+\frac{u}{\tau}r=(\tau+\xi)\,,\label{eq:oval bipolar2}
+\ee
+where $\sign(x):=x/|x|$ is the sign function and $\xi$ is given by equation \ref{eq:def xi}. Substituting $r$ from \ref{eq:oval}, this equation becomes
+\be 
+	\sign(\tau(1-a^2))r''-\frac{u}{\tau}r'=a\xi\,. \label{eq:oval bipolar3}
+\ee
+Equations \ref{eq:oval}, \ref{eq:oval bipolar2}, and \ref{eq:oval bipolar3} are the so-called bipolar equations of the Cartesian oval \cite{johnson1875bipolar}.
+
+The procedure for finding $F''$ just shown here has not been presented in this form elsewhere. However, the equations presented here are equivalent to those in \cite{johnson1875bipolar}. The authors considered it a good idea to revisit Johnson's work using modern, clean notation.
+
+%To end this section, consider the next question: given the points $F$ and $F'$, for which values of $a$ and $u$ the curve defined by equation \ref{eq:oval} is not empty. As it turns out, $a$ and $u$ must satisfy $u\geq \min(1,a)|\tau|$ if $a>-1$, $u\leq|\tau|$ if $a<-1$ and $-|\tau|\leq u\leq |\tau|$ if $a=-1$, where $\min(x, y)$ is defined as the minimum value between $x$ and $y$. These are the \textit{existence conditions} for Cartesian ovals.
+
+In \cite{quelet1829}, Quelet first observed that Cartesian ovals can be obtained by intersecting two cones with parallel axes. This is quite obvious since, from equation \ref{eq:oval xy-cord}, it is easy to see that Cartesian ovals can be obtained by intersecting the cones defined by the equations
+\be
+	z=\sqrt{x^2+y^2}\,,
+\ee
+\be
+	z=u-a\sqrt{(x-\tau)^2+y^2}\,.
+\ee
+Let the first be called the fixed cone (FC) and the second the movable cone (MC). The values of $u$, $a$, and $\tau$ control the location of the apex and the apex angle of the MC. For some values of these constants, the two cones may not intersect. In such cases, one says that the curve is empty, i.e., that no point satisfies equation \ref{eq:oval}.
+
+Hence, by analyzing the cases where the cones intersect, one can obtain the \textit{existence condition} on $u$, $a$ and $\tau$ such that the curve defined by equation \ref{eq:oval xy-cord} is nonempty. This analysis can be divided into three main cases, $|a|<1$, $a>1$ and $a<-1$, and two limit cases, $a=\pm 1$. For $|a|<1$, the cones intersect if the $z$-intercept of the MC is at or above the origin, as shown in Fig. \ref{fig:cones_1_3}. This implies $u-a|\tau|\geq 0$. For $a>1$, the cones intersect if the apex of the MC is at or above the FC, as shown in Fig. \ref{fig:cones_2_4}. Thus, $u\geq |\tau|$. Conversely, for $a<-1$, the cones intersect if the apex of the MC is at or below the FC, as shown in Fig. \ref{fig:cones_2_4}. Then, one needs $u\leq|\tau|$.
+
+In the limiting cases $a=\pm 1$, the two cones have the same apex angle of $\pi/2$. For $a=1$, the cones open in opposite directions. For $a=1$, the apex and the $z$-intercept of the MC are both above or at the FC when $u\geq|\tau|$. This is the existence condition for $a=-1$. In the last case, $a=-1$, two conditions are required: the MC's apex must be below or at the FC, and the MC's $z$-intercept must be above or at the origin. This translates to $-|\tau|\leq u \leq |\tau|$.
+
+The existence condition of Cartesian ovals can be summarized as follows
+\be
+u\geq \text{min}{(1,a)}|\tau|,\qquad \text{if } a>-1;	\label{eq:cond_c1}
+\ee
+\be
+u\leq|\tau|,                  \qquad \text{if } a<-1;	\label{eq:cond_c2}
+\ee 
+\be
+-|\tau|\leq u\leq|\tau|,      \qquad \text{if } a=-1\,. \label{eq:cond_c3}
+\ee
+where $\min(x, y)$ is defined as the minimum of $x$ and $y$. As far as the authors know, the existence conditions \ref{eq:cond_c1}-\ref{eq:cond_c3} are not in the literature. Nevertheless, one can argue that they are implicit in the work of Descartes \cite{descartes1637} and they are mentioned by R. Ferréol on his math blog \cite{mathcurve}. At the time of writing this article, the condition for $a< -1$ in \cite{mathcurve} is incorrect, but the other one is correct. %One could also argue that these conditions are implicit in the work of descartes \cite{descartes1637}.
+
+%As an interesting final remark, the apex of the MC is a point in the intersection curve when $u=-\min(-1,-|a|)|\tau|$. For this value of $u$, the Cartesian oval is a limaçon of Pascal, or a part of it.
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 0.4 \textwidth]{images/cones1.png}
+	\includegraphics[width = 0.4 \textwidth]{images/cones3.png}
+	\caption{The fixed cone (FC) and the movable cone (MC) for the cases $0<a<1$ and $-1<a<0$. On the left, $a=1/2$ and $u=0.85$; on the right, $a=-1/2$ and $u=-0.3$. In both cases, $\tau=1$. Because of the form of the cones, the intersection curve exists if the MC's $z$-intercept is at or above the origin.}
+	\label{fig:cones_1_3}
+\end{figure}
+
+\begin{figure}
+	\centering
+	\includegraphics[width = 0.4 \textwidth]{images/cones2.png}
+	%\includegraphics[width = 0.37 \textwidth]{images/cones4.png}		
+	\includegraphics[width = 0.38 \textwidth]{images/cones4.png}
+	\caption{The fixed cone (FC) and the movable cone (MC) for the cases $a>1$ and $a<-1$. On the left, $a=2$ and $u=1.6$; on the right, $a=-2$ and $u=0.5$. In both cases, $\tau=1$. The condition for the cones to intersect depends only on the MC's apex location.}
+	\label{fig:cones_2_4}
+\end{figure}
+
 
 \section{Orthogonal systems of coordinates based on ovals} %2D (and 3D coordinates)
 \label{sec:orthogonal coordinates}
@@ -227,7 +311,7 @@ By substituting $t=\ln s$ with this solution of $s$, one obtains the desired rel
 
 \section{Triconfocal ovals} % *Def. familia de óvalos triconfocales, *Mapeo inverso, *Caso especial de coordenadas de caracolas de Pascal
 \label{sec:triconfocal}
-In the section \ref{sec:Cartesian ovals}, it was mentioned that any oval is related to three special points called foci. Here we are going to use this fact to construct two families of curves that intersect each other at right angles. To see this, consider the equation that relates $\xi$ to the other parameters of the oval
+In Section \ref{sec:Cartesian ovals}, it was mentioned that any oval is related to three special points called foci. Here we are going to use this fact to construct two families of curves that intersect each other at right angles. To see this, consider the equation that relates $\xi$ to the other parameters of the oval
 \be
 	\xi = \frac{u^2-\tau^2}{(1-a^2)\tau}\,.
 \ee
@@ -349,7 +433,7 @@ is the value of $\alpha(x,y;\xi,1)$ at $x=x_0$ and $y=0$, with $x_0$ being so th
 \begin{figure}
 	\centering
 	\includegraphics[width=0.55\linewidth]{images/descartes_oval.png}
-	\caption{A Cartesian oval shown over an $xy$-plane centered at the focus $F$. The equation of the curve is $r+ar'=u$, with $a=0.7$ and $u=1.2$. The focal distance is $\tau=1$.}	
+	\caption{A Cartesian oval shown over the $xy$-plane used in Section \ref{sec:Cartesian ovals}. The equation of the oval is $r+ar'=u$, with $a=0.7$ and $u=1.2$. The focal distance is $\tau=1$.}	
 	%\caption{A Cartesian oval with $\tau=1$, $a=0.7$ and $u=1.2$. The distances, angles, and other tags are also shown.}
 	\label{fig:oval}
 \end{figure}
@@ -444,7 +528,7 @@ This coordinates may be called as \textit{triconfocal ovoid 3D coordinates}.
 
 \begin{table}[hb]
 	\centering
-	\caption{Orthogonal coordinates. $\mathcal{D}_u$ is given by the equation \ref{eq:D_u} and $\mathcal{D}_\alpha$ and $\mathcal{D}_\beta$ are described in the section \ref{sec:triconfocal}. For the Pascal limaçon coordinates it was made $\alpha\equiv\mu$ and $\beta\equiv\nu$.}
+	\caption{Orthogonal coordinates. $\mathcal{D}_u$ is given by the equation \ref{eq:D_u} and $\mathcal{D}_\alpha$ and $\mathcal{D}_\beta$ are described in Section \ref{sec:triconfocal}. For the Pascal limaçon coordinates it was made $\alpha\equiv\mu$ and $\beta\equiv\nu$.}
 	\begin{tabular}{lcccc}
 	\hline
 	System of coordinates & Coordinates & \multicolumn{3}{c}{Conditions} \\ \hline
@@ -548,7 +632,7 @@ where $A$ and $B$ are arbitrary functions of $u$, $c_1$ is a constant, and $\mat
 	\mathcal{L} = \X_u\rob{\X_{uv}\X_u + \Y_{uv}\Y_u}(e^{-2B}-e^{2(A-c_1)})\,,
 \ee
 
-In order to check that this solutions satisfies the equation \ref{eq:EFE} it is convenient to use the relations shown in the section \ref{sec:XY} to simplify the expressions that involve derivatives of $\X$ and $\Y$. In this scenario, the weak and strong energy conditions can be satisfied if $\mu,P_i\geq 0$. In the limit when $x,y,z\gg \tau$ this inequalities take the approximate form 
+In order to check that this solutions satisfies the equation \ref{eq:EFE} it is convenient to use the relations shown in Section \ref{sec:XY} to simplify the expressions that involve derivatives of $\X$ and $\Y$. In this scenario, the weak and strong energy conditions can be satisfied if $\mu,P_i\geq 0$. In the limit when $x,y,z\gg \tau$ this inequalities take the approximate form 
 \be
 	uA_u^2-(A_u+B_u) \geq 0\,,
 \ee
