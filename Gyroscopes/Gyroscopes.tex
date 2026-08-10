@@ -1,0 +1,86 @@
+\documentclass[12pt, ams, nofootinbib]{revtex4}
+%\documentclass[12pt,preprint,ams, nofootinbib]{revtex4-1}
+%\documentclass{revtex4-1}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amsthm}
+\usepackage{amssymb}
+\usepackage{graphicx}  %for \scalebox	
+\usepackage{mathtools} %for \dcases
+\usepackage{epsfig}
+\usepackage[colorlinks=true,urlcolor=blue,linkcolor=blue]{hyperref}
+\usepackage{amscd}
+%\usepackage[color,draft]{showkeys}
+\usepackage{xcolor}
+%\usepackage{enumitem}
+\usepackage{enumerate}
+\usepackage{frcursive}
+\usepackage[T1]{fontenc}
+\usepackage[toc]{appendix}
+%\usepackage[bottom]{footmisc}
+\usepackage{mathrsfs}
+\usepackage{tensor}     % index positioning in tensor componentes: \tensor{M}{^a_b^c_d}
+\usepackage{multirow}
+
+\usepackage{mybookstyle}
+
+
+\begin{document}
+
+\preprint{APS/123-QED}
+
+\title{Gyroscope precession}
+
+\author{Juan A. Guarín-Rojas}
+\email{juan2201870@correo.uis.edu.co}
+\affiliation{Escuela de Física, Universidad Industrial de Santander, CP 680002,  Bucaramanga, Colombia.}
+
+\author{Antonio C. Guti\'errez-Pi\~{n}eres}
+\email{acgutier@uis.edu.co}
+\affiliation{Escuela de Física, Universidad Industrial de Santander, CP 680002,  Bucaramanga, Colombia}
+\affiliation{Instituto de Ciencias Nucleares, Universidad Nacional Aut\'onoma de M\'exico,
+ AP 70543,  M\'exico, CDMX 04510, M\'exico}
+
+\date{\today}
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%\begin{abstract} 
+%\end{abstract}
+
+%\pacs{}
+
+\maketitle
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{What is a gyroscope?}
+
+A spinning symmetric top keeps its axis of rotation unchanged with respect to an inertial frame in the absence of torques or in the fast top approximation.
+
+Experimentally, it is convenient to construct a fast top so that, if any torques are present, their effect might be insignificant.
+
+A gimbal has the purpose of controlling or restricting the movement of the top, specifically, restricting the degrees of freedom of the rotation axis.
+
+A gyroscope can be defined as a symmetric top together with a gimbal or a mount that holds the top.
+
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Gyroscope precession in Newtonian mechanics}
+When torques are present, a symmetric top's axis of rotation precesses and nutates around a certain axis. If the angular velocity of the top is large enough, the nutation can be negligible, and the top precesses with a constant angular velocity of $\dot{\phi}=$.
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\section{Gyroscope precession in general relativity}
+In general relativity, even in the absence of torques, a gyroscope will precess due to Thompson's precession, geodesic precession, and the Lense-Thirring effect. Thompson's precession manifests the special relativistic nature of spacetime, while the geodesic precession and the Lense-Thirring effect manifest the curvature of spacetime. The Lense-Thirring effect is usually related to the gravitational dragging effect.
+
+
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
+\bibliographystyle{unsrt}
+\bibliography{OC_Ref}
+
+
+\end{document}

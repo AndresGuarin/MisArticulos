@@ -317,62 +317,46 @@ Substituting equation \ref{eq:sol_s1/3} into equations \ref{eq:x(t)} and \ref{eq
 
 \subsection{Triconfocal ovals} % *Def. familia de óvalos triconfocales, *Mapeo inverso, *Caso especial de coordenadas de caracolas de Pascal
 \label{sec:triconfocal}
-Section \ref{sec:Cartesian ovals} showed that Cartesian ovals can be related to three special points called foci. Given two foci and the values of $a$ and $u$, the position of the third focus can be determined by equation \ref{eq:def xi}. Alternatively, if the three foci are known, the value of $a$ or $u$ can be determined up to a sign from the same equation.
+Section \ref{sec:Cartesian ovals} showed that Cartesian ovals can be related to three special points called foci. Given two foci and the values of $a$ and $u$, the position of the third focus can be obtained from equation \ref{eq:def xi}. Alternatively, if the three foci are known, the value of $a$ or $u$ can be obtained up to a sign from the same equation. Knowledge of the three foci and one point $M$ determines two possible values of both $a$ and $u$ from equations \ref{eq:oval} and \ref{eq:def xi}, which determine two Cartesian ovals. Thus, through any point, two ovals can be drawn having the same three foci. This procedure is used in this subsection to construct two families of ovals that intersect at right angles. 
 
-Knowledge of the three foci and one point $M$ determine two possible values of both $a$ and $u$ from equations \ref{eq:oval} and \ref{eq:def xi}, 
-
- two pairs of values $(a,u)$ from equations \ref{eq:oval} and \ref{eq:def xi}, which determine two Cartesian ovals. Thus, through any point two ovals can be drawn having the same three foci 
-
- Cartesian ovals that pass throw $M$. 
-
-Given three foci and one point $M$, two Cartesian ovals that meet at $M$ can be drawn. 
-
-Knowledge of the three foci and one point $M$ on the curve is sufficient to determine $a$ and $u$ from equations \ref{eq:oval} and \ref{eq:def xi}, and thus to construct the oval. 
-
-This procedure, also noted by Williamson \cite{williamson1873}, is exploited in this subsection to obtain two families of ovals that intersect each other at right angles. 
-
-%The ovals of these families have the same three foci, and hence they are called as \textit{triconfocal ovals}.
-
-%Alternatively, if the three foci and one point $M$ on the curve are known, one can obtain the values of $u$ and $a$ from the equations \ref{eq:oval} and \ref{eq:def xi}. This procedure to construct ovals is used in this subsection to derive two families of ovals that intersect each other at right angles.
-
-Consider the equation \ref{eq:oval} that relates $\xi$ to the other parameters of the oval. From this equation, one can solve for $u$ so that the equation \ref{eq:oval} becomes
+Consider the equation \ref{eq:oval} that relates $\xi$ to the other parameters of the oval. From this equation, one can solve for $u$ so that equation \ref{eq:oval} becomes
 \be
 	r+ar' = \pm \sqrt{\xi\tau(1-a^2)+\tau^2}\,.
 \ee
-Squaring both sides and solving for $a$ gives $a = (-rr'\pm \tau r'')/(r'^2+\xi\tau)$. Let $\alpha$ and $\beta$ be defined as
+Squaring both sides and solving for $a$ yields $a = (-rr'\pm \tau r'')/(r'^2+\xi\tau)$. Let $\alpha$ and $\beta$ be defined as
 \be
 	\alpha =  \frac{-\sqrt{x^2+y^2}\sqrt{(x-\tau)^2+y^2} + \tau \sqrt{(x-\tau-\xi)^2+y^2}}{(x-\tau)^2+y^2+\xi\tau}\,, \label{eq:alpha}
 \ee
 \be
-	\beta = -\frac{\sqrt{x^2+y^2}\sqrt{(x-\tau)^2+y^2} + \tau \sqrt{(x-\tau-\xi)^2+y^2}}{(x-\tau)^2+y^2+\xi\tau}\,. \label{eq:beta}
+	\beta = -\frac{\sqrt{x^2+y^2}\sqrt{(x-\tau)^2+y^2} + \tau \sqrt{(x-\tau-\xi)^2+y^2}}{(x-\tau)^2+y^2+\xi\tau}\,, \label{eq:beta}
 \ee
-The $\alpha$- and $\beta$-constant curves are ovals that share the same three foci, and hence they are called \textit{triconfocal ovals}. It is straightforward to show that these curves intersect each other at right angles, i.e., that $\nabla \alpha\cdot \nabla\beta = 0$. In Figure \ref{fig:triconfocal ovals}, some triconfocal ovals are shown for $\tau=1$ and $\xi=1$. In \cite{williamson1873}, it is also proved that through any point, two Cartesian ovals can be drawn having the same three foci and that these ovals meet orthogonally.
+with $\tau$ and $\xi$ fixed as constants. The $\alpha$- and $\beta$-constant curves are ovals that share the same three foci and are therefore called \textit{triconfocal ovals}. It is straightforward to show that these curves intersect at right angles, i.e., that $\nabla \alpha\cdot \nabla\beta = 0$. In Figure \ref{fig:triconfocal ovals}, some triconfocal ovals are shown for $\tau=1$ and $\xi=1$. In \cite{williamson1873}, it is also noted that Cartesian ovals with the same three foci meet orthogonally.
 
-To find the inverse relations, $x=x(\alpha,\beta)$ and $y=y(\alpha,\beta)$, it is convenient to notice that
+To find the inverse relations, $x=x(\alpha,\beta)$ and $y=y(\alpha,\beta)$, it is convenient to note that
 \be
 	\alpha+\beta = -\frac{2rr'}{\xi\tau+r'^2}\,, \label{eq:A1}
 \ee
 \be
 	\alpha\beta= \frac{-\xi\tau-\tau^2+r^2}{\xi\tau+r'^2}\,. \label{eq:A2}
 \ee
-From equation \ref{eq:A1} one obtains $r=-(\alpha+\beta)(\xi\tau+r'^2)/2r'$. Replacing this expression in equation \ref{eq:A2}, and reorganizing the equation one gets
+From equation \ref{eq:A1}, one obtains $r=-(\alpha+\beta)(\xi\tau+r'^2)/2r'$. Substituting this expression into equation \ref{eq:A2} and reorganizing yields
 \be
 (\beta -\alpha)^2 r'^{4} + 2\rob{-2\tau + \xi\rob{\alpha^2+\beta^2-2}}\tau r'^2 + \xi^2 \tau^2 (\alpha +\beta)^2 = 0\,.
 \ee
-The two solutions of this equation, viewed as a quadric in $\mu\equiv r'^2$, are 
+The solutions to this equation for $\mu\equiv r'^2$ are 
 \be
 	\mu_{\pm} = 
-\frac{\pm2 \sqrt{\tau^{2} \left(\beta^{2} \xi -\tau -\xi \right) \left(\alpha^{2} \xi -\tau -\xi \right)}+2 \tau^{2}+\left(-\alpha^{2}-\beta^{2}+2\right) \xi  \tau}{\left(\beta -\alpha \right)^{2}}\,.
+\frac{2 \tau^{2}+\left(2-\alpha^{2}-\beta^{2}\right)\xi\tau \pm 2 \sqrt{\tau^{2} \left(\beta^{2} \xi -\tau -\xi \right) \left(\alpha^{2} \xi -\tau -\xi \right)} }{\left(\beta -\alpha \right)^{2}}\,.
 \ee
-Since $\mu_{+}-\mu_{-}= 
-4 \sqrt{\tau^2 \left(\beta^2 \xi -\tau -\xi \right) \left(\alpha^2 \xi-\tau - \xi\right)}/ (\beta -\alpha)^2>0$, one has $\mu_{+}>\mu_{-}$. Then one may use $\mu=\mu_+$ to ensure that $r'2>0$. Taking $r'^2=\mu_{\pm}$, one obtains
+%It might be important to note that $\mu_{+}-\mu_{-}= 4 \sqrt{\tau^2 \left(\beta^2 \xi -\tau -\xi \right) \left(\alpha^2 \xi-\tau - \xi\right)}/ (\beta -\alpha)^2>0$, so that $\mu_{+}>\mu_{-}$. Taking $r'^2=\mu_{\pm}$, one obtains
+Since $\mu_{+}-\mu_{-}= 4 \sqrt{\tau^2 \left(\beta^2 \xi -\tau -\xi \right) \left(\alpha^2 \xi-\tau - \xi\right)}/ (\beta -\alpha)^2>0$, it follows that $\mu_{+}>\mu_{-}$. Thus, one solution yields an oval larger than the other. The solution $r'^2=\mu_{\pm}$ yields
 \begin{align}
 	x =& \Big[ \pm\rob{\alpha  \beta -1} \sqrt{\tau^2 \rob{\beta^2 \xi -\tau -\xi } \rob{\alpha^2 \xi -\tau -\xi }}\notag \\
 	&-\sqb{\rob{1-\alpha^2+\alpha  \beta -\beta^2} \tau +\xi  \rob{\alpha^2-1} \rob{\beta^2-1}} \tau\Big]  \frac{1}{\rob{\beta -\alpha }^2 \tau}\,, \label{eq:xAB}
 \end{align}
-\be y^2 =  -\rob{\xi\tau(\alpha\beta -1) -\tau^2\mp\sqrt{\tau^2 \rob{\beta^2 \xi -\tau -\xi  } \rob{\alpha^2 \xi -\tau -\xi }}}^2\frac{\rob{\alpha^2-1} \rob{\beta^2-1}}{\rob{\beta -\alpha }^4 \tau^2}\,. \label{eq:yAB}
+\be y^2 =  -\rob{\xi\tau(\alpha\beta -1) -\tau^2\mp\sqrt{\tau^2 \rob{\beta^2 \xi -\tau -\xi  } \rob{\alpha^2 \xi -\tau -\xi }}}^2\frac{\rob{\alpha^2-1} \rob{\beta^2-1}}{\rob{\beta -\alpha }^4 \tau^2}\,, \label{eq:yAB}
 \ee
-where it was considered the equations $x=\frac{r'^2-\tau^2-r^2}{2\tau}$ and $y^2=r^2-\frac{(r'^2-\tau^2-r^2)^2}{(2\tau)^2}$, derived from the definitions of $r$ and $r'$ in terms of $x$ and $y$.
+where the equations $x=(r^2+\tau^2-r'^2)/(2\tau)$ and $y^2=r^2-(r^2+\tau^2-r'^2)^2/(4\tau^2)$, derived from the definitions of $r$ and $r'$ in terms of $x$ and $y$, were considered.
 
 \newpage
 
