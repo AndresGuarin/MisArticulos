@@ -1,0 +1,121 @@
+\usepackage[letterpaper]{geometry}	
+\usepackage{fancyhdr}
+\usepackage{amsmath}
+\usepackage{amssymb}
+\usepackage{amsthm}
+\usepackage{mathrsfs}
+\usepackage[spanish]{babel}
+\usepackage{mathrsfs}
+\usepackage[font=small,labelfont=bf,justification=justified,format=plain]{caption}
+\usepackage{bm}
+\usepackage{braket}
+\usepackage{cancel}
+\usepackage{xcolor}
+\usepackage{float}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage{harmony}
+\usepackage{cleveref}
+\usepackage[T1]{fontenc}
+\usepackage[utf8]{inputenc}
+\usepackage{lmodern}
+\usepackage[numbers]{natbib}
+\usepackage{multirow}
+\usepackage{physics}
+\usepackage{bbding}
+\usepackage{perpage}
+\usepackage{ragged2e}
+\usepackage{subcaption}
+\usepackage{tikz}
+\usepackage{wrapfig}
+\usepackage[symbol]{footmisc}
+\renewcommand{\thefootnote}{\fnsymbol{footnote}}
+\usepackage{multicol}
+\usepackage{comment}
+\usepackage{relsize}    % for \mathlarger{}
+\usepackage{tensor}     % index positioning in tensor componentes: \tensor{M}{^a_b^c_d}
+%\usepackage{cite}
+%\usepackage[noabbrev]{cleveref}
+%\usepackage{boondox-cal}
+\usepackage{scalerel}
+\usepackage{rotating}
+
+\usepackage{pdfpages}  % for inserting pdfs
+\usepackage{afterpage} % for inserting blank pages
+
+%command for inserting a blank page
+\newcommand\blankpage{
+    \null
+    \thispagestyle{empty}
+    \addtocounter{page}{-1}
+    \newpage}
+
+\spanishdecimal{.}
+
+\newcommand{\rob}[1]{\left(#1\right)}    % Round brackets ()
+\newcommand{\sqb}[1]{\left[#1\right]}    % Square brackets []
+\newcommand{\cub}[1]{\left\{#1\right\}}  % Curly brackets {}
+\newcommand{\abb}[1]{\left|#1\right|}    % Absolute value ||
+\newcommand{\anb}[1]{\left\langle#1\right\rangle}    % Angular brackets <>
+\newcommand{\mb}[1]{\mathbf{#1}}         % Math bold face
+\newcommand{\mbi}[1]{\boldsymbol{#1}}    % Math bold and italic face 
+\newcommand{\cyan}[1]{\textcolor{cyan}{#1}}
+\newcommand{\partd}[3][ ]{\frac{\partial^{#1} #2}{\partial #3^{#1}}} %Note: the first argument is the degree of the derivative and it is optional.
+\newcommand{\tprod}[2]{\mathbf{d}\boldsymbol{#1} \otimes \mathbf{d}\boldsymbol{#2}}
+\newcommand{\form}[1]{\mathbf{d}\boldsymbol{#1}}
+%\newcommand{\rise}[3][0.5ex]{#2^{#3}}
+%\newcommand{\descend}[3][0.5ex]{#2_{#3}}
+\newcommand{\rise}[3][0.4ex]{{#2}^{\raisebox{#1}{\scriptsize $#3$}}}
+\newcommand{\descend}[3][0.4ex]{{#2}_{\raisebox{-#1}{\scriptsize $#3$}}}
+\newcommand{\uln}[1]{\underline{#1}}
+\renewcommand{\Re}{\mathbb{R}}
+
+% Comands
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+\def\bea{\begin{eqnarray}}
+\def\eea{\end{eqnarray}}
+\def\ba{\begin{align}}
+\def\ea{\end{align}}
+\def\bpr{\begin{proof}}
+\def\epr{\end{proof}}
+
+% Functions
+\def\sign{{\rm sign}}
+\def\sen{{\rm sen}}
+\def\senh{{\rm senh}}
+\def\arcsenh{{\rm arcsenh}}
+\def\arcsin{{\rm arcsinh}}
+
+% Expressions
+\def\A{\mathcal{A}}
+\def\B{\mathcal{B}}
+\def\X{\Lambda}
+\def\Y{\Upsilon}
+\def\e{\text{e}}
+\def\ehat{\hat{\text{\textbf{\textit{e}}}}}
+\def\ihat{\hat{\boldsymbol{\imath}}}
+\def\jhat{\hat{\boldsymbol{\jmath}}}
+\def\khat{\hat{\text{\textbf{\textit{k}}}}}
+\def\bnabla{\nabla}
+%\newcommand{\lt}{\mathrel{<}}
+%\newcommand{\gt}{\mathrel{>}}
+
+
+\theoremstyle{theorem}
+\newtheorem{theorem}{Teorema}
+
+\theoremstyle{theorem} 
+\newtheorem{lemma}{Lema}
+
+\theoremstyle{theorem} 
+\newtheorem{corollary}{Corolario}
+
+\theoremstyle{definition}
+\newtheorem{definition}{Definición}
+
+\theoremstyle{remark}
+\newtheorem*{remark}{Observación}
+
+\theoremstyle{theorem} 
+\newtheorem{proposition}{Proposición}

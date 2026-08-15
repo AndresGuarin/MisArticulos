@@ -116,7 +116,7 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \begin{abstract} 
-In this work, some Cartesian ovoid coordinates are constructed to facilitate the description of ovoid spacetimes. In optics, Cartesian ovoids are very useful for constructing optical systems without both geometric and chromatic aberrations. In astrophysics, these ovoids may be useful for describing objects with mass quadrupoles, such as merging binary stars. Then, ovoid spacetimes could be of interest to the scientific community. To construct ovoid coordinates, two special families of ovals are considered: confocal and triconfocal ovals. In the first family, the ovals share two foci, and in the second one, they share three. For both cases, another family of curves is found such that any of its members intersects the curves of its respective family of ovals at right angles. Then, some 2D coordinates are inferred from these families of curves. These coordinates are extended to 3D, yielding cylindrical and rotational-like coordinates. From the Euclidean line element in ovoid coordinates, a metric ansatz for describing a stationary ovoid spacetime is proposed. Next, this ansatz is used to obtain an exact solution of the Einstein field equations for a static anisotropic fluid.
+In this work, some Cartesian ovoid coordinates are constructed to aid the description of ovoid spacetimes. In optics, Cartesian ovoids are useful to construct optical systems free of both geometric and chromatic aberrations. In astrophysics, these ovoids may be useful for describing objects with mass quadrupoles, such as merging binary stars. To construct ovoid coordinates, two special families of ovals are considered: confocal and triconfocal ovals. In the first family, the ovals share two foci, and in the second, they share three. For each family, the set of curves that intersect the ovals at right angles is obtained. Then, some 2D coordinates are derived from these families of curves. These coordinates are extended to 3D, yielding cylindrical and rotational-like coordinates. From the Euclidean line element in ovoid coordinates, a metric ansatz for describing a stationary ovoid spacetime is proposed. This ansatz is used to obtain an exact solution of the Einstein field equations for a static anisotropic fluid.
 \end{abstract}
 
 %Remark: Pascal limaçon have not been reported before in the literature.
@@ -129,40 +129,42 @@ In this work, some Cartesian ovoid coordinates are constructed to facilitate the
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction} %Mencionar: *óvalos en la óptica, *aplicación en astrofísica
 \label{sec:intro}
-Cartesian ovoids are quartic surfaces that have been proven to be useful in optics. They were found as a solution to the problem of rigorous stigmatism \cite{silva-Lora2020a}, in which light rays emitted from a point source must be refracted to a single point by an optical surface, which turns out to be a Cartesian ovoid \cite{descartes1637, southall1922}. In a plane containing the focal axis, one obtains a Cartesian oval as the intersection curve between the ovoid and the plane. In recent years, Cartesian ovoids have been recovered by Silva-Lora and Torres \cite{silva-Lora2020c, silva-Lora2021, silva-Lora2022}. These authors use ovoids to construct singlet lenses with aplanatism and compound lenses with achromatic stigmatism, i.e., stigmatic systems free of chromatic aberration. These promising results show the importance of ovoids in optics.
+Cartesian ovoids are quartic surfaces that have been proven to be useful in optics. They were found as a solution to the problem of rigorous stigmatism \cite{silva-Lora2020a}, in which light rays emitted from a point source must be refracted or reflected to a single point by an optical surface, which turns out to be a Cartesian ovoid \cite{descartes1637, southall1922}. In a plane containing the focal axis, one obtains a Cartesian oval as the intersection curve between the ovoid and the plane. In recent years, Cartesian ovoids have been recovered by Silva-Lora and Torres \cite{silva-Lora2020c, silva-Lora2021, silva-Lora2022}. These authors use ovoids to construct singlet lenses with aplanatism and compound lenses with achromatic stigmatism, i.e., stigmatic systems free of chromatic aberration. These promising results show the importance of ovoids in optics.
 
-Ovoids can also be considered as a specialization of the family of superconic surfaces	 \cite{Greynolds2002, Cho2016, silva-Lora2020b}. These surfaces satisfy an algebraic equation of $n$th degree that generalizes the Schwarzschild equation for conic surfaces\footnote{Hereafter, conic surfaces refer to the surfaces of revolution of conic sections.} \cite{schwarzschild1905conic, silva-Lora2020b}. They have been proposed for use in optical design. Ovoids are also close to conic surfaces in that their respective curves, ovals and conic sections, both have foci. However, ovals have three foci \cite{chasles1837, williamson1873, johnson1875bipolar}. When one of the foci goes to infinity, the Cartesian ovals become conic sections \cite{chasles1837, johnson1875bipolar}, or a portion of them, and when the third focus coincides with the first or the second, they become limaçons of Pascal \cite{johnson1875bipolar}. In this way, ovoids generalize conic surfaces. 
+Ovoids can also be considered as a specialization of the family of superconic surfaces	 \cite{Greynolds2002, Cho2016, silva-Lora2020b}. These surfaces satisfy an algebraic equation of $n$th degree that generalizes the Schwarzschild equation for conic surfaces\footnote{Conic surfaces refer to the surfaces of revolution of conic sections.} \cite{schwarzschild1905conic, silva-Lora2020b}. Ovoids are also close to conic surfaces in that their respective generatrices, ovals and conic sections, both have foci. However, ovals have three foci \cite{chasles1837, williamson1873, johnson1875bipolar}. When one of the foci goes to infinity, the Cartesian ovals become conic sections \cite{chasles1837, johnson1875bipolar}, or a portion of them, and when the third focus coincides with the first or the second, they become limaçons of Pascal \cite{johnson1875bipolar}. In this way, ovoids generalize conic surfaces. 
 %\footnote{See note XXI of \cite{chasles1837} and chapter XX of \cite{williamson1873}.}
 
-In general relativity, symmetries are key to simplifying the description of spacetimes. The most common symmetries used to model astrophysical objects are spherical and axial symmetry. Models with these symmetries are widely found in the literature \cite{schwarzschild1916fluid,tolman1939static,wahlquist1968interior,chinea1990interior}. Within axially symmetric spacetimes, there are the ellipsoidal spacetimes formulated by Krasiński \cite{Krasinski1978}. Some authors have found solutions to the Einstein field equations based on Krasiński's work, recovering known solutions and obtaining new ones \cite{Racz1992,racz1998uniqueness, Zsigrai2003}. Hence, spherical and ellipsoidal symmetry have been useful to construct spacetimes in general relativity.
+In general relativity, symmetries are key to simplifying the description of spacetimes. The most common symmetries used to model astrophysical objects are spherical and axial symmetry. Models with these symmetries are widely found in the literature \cite{schwarzschild1916fluid,tolman1939static,wahlquist1968interior,chinea1990interior}. Within axially symmetric spacetimes, there are the ellipsoidal spacetimes formulated by Krasiński \cite{Krasinski1978}. Based on Krasiński's ansatz, new and known solutions to the Einstein field equations have been recovered \cite{Racz1992,racz1998uniqueness, Zsigrai2003}. Hence, spherical and ellipsoidal symmetry are useful to construct spacetimes in general relativity.
 
-Since spheres and ellipsoids are special cases of Cartesian ovoids, one wonders if ovoids can also be useful to construct spacetimes in general relativity. As ovoids resemble deformed spheres, one would expect that an astrophysical object with this shape must have a mass quadrupole. This quadrupole would allow the object to emit gravitational waves in a perturbative regime \cite{misner2017gravitation}. Then, ovoids might be useful to describe the gravitational waves emitted by binary neutron stars during merger. As the stars coalesce, they get deformed and form some kind of funnel that could be modeled using an ovoid.
+Since spheres and ellipsoids are special cases of Cartesian ovoids, one wonders if ovoids can also be useful to construct spacetimes in general relativity. As ovoids resemble deformed spheres, an astrophysical object with this shape must have a mass quadrupole. This quadrupole would allow the object to emit gravitational waves in a perturbative regime \cite{misner2017gravitation}. Then, ovoids might be useful to describe the gravitational waves emitted by binary neutron stars during merger because, as the stars coalesce, they get deformed, with one star adopting a pear shape that could be modeled using an ovoid.
 
-The purpose of this work is to construct some ovoid spacetimes as candidates to model the gravitational field of an ovoid-shaped object. To that end, Sections \ref{sec:Cartesian ovals}-\ref{sec:characterization} introduce Cartesian ovals and ovoid coordinates. In Section \ref{sec:Cartesian ovals}, Cartesian ovals are treated as a three-foci curve, and their existence condition is shown. Section \ref{sec:families of ovals} presents confocal and triconfocal ovals and their respective orthogonal curves. Based on the curves discussed above, Section \ref{sec:characterization} formulates and characterizes ovoid coordinates. The transformation rules between ovoid and Cartesian coordinates, and the line elements in the new coordinates are obtained.
+Optics has a key connection to general relativity. Considering that the speed of light is the same for all observers and that light moves along null geodesics is one of the central ideas of both general and special relativity. Null geodesics also play a key role in characterizing spacetime metrics, as in the Petrov and Segre classifications. Since ovoids are important in optics, one wonders if they can be useful in general relativity. Perhaps an ovoid spacetime can be used to model a stigmatic gravitational lens, thus leading to a theory of optical aberrations for gravitational lenses.
 
-In general relativity, symmetry can be described in terms of isometry groups and geometric invariants such as Killing vectors \cite{StephaniKramer2003}. This description applies to spherical, axial, and time-translation symmetries. To extend the notion of symmetry, Krasiński's pioneering work \cite{Krasinski1978} defines ellipsoidal spacetimes in terms of a congruence of observers and the induced metric. Whether isometries or Killing vectors can characterize these spacetimes remains an open question. For now, this work focuses on proposing a metric ansatz rather than characterizing its symmetry. Based on Krasiński's ideas, Section \ref{sec:ovoid spacetimes} defines ovoid spacetimes using the induced metric on confocal ovoids. In Section \ref{sec:solutions}, exact solutions to the Einstein field equations for a static anisotropic fluid in an ovoid spacetime are obtained.
+The purpose of this work is to construct some ovoid spacetimes as candidates to model the gravitational field of an ovoid-shaped object. To that end, Sections \ref{sec:Cartesian ovals}-\ref{sec:characterization} introduce Cartesian ovals and ovoid coordinates. In Section \ref{sec:Cartesian ovals}, Cartesian ovals are treated as three-foci curves, and their existence condition is derived. Section \ref{sec:families of ovals} presents confocal and triconfocal ovals, and their respective orthogonal curves. Based on these curves, Section \ref{sec:characterization} formulates and characterizes ovoid coordinate systems. The transformation rules between ovoid and Cartesian coordinates, together with the line element in the new coordinates, are also obtained in the same section.
 
+In general relativity, symmetry can be described in terms of isometry groups and geometric invariants such as Killing vectors \cite{StephaniKramer2003}. This description applies to spherical, axial, and time-translation symmetries. To extend the notion of symmetry, Krasiński's pioneering work \cite{Krasinski1978} defines ellipsoidal spacetimes in terms of a congruence of observers and the induced metric. Whether isometries or Killing vectors can characterize these spacetimes remains an open question. Based on Krasiński's ideas, Section \ref{sec:ovoid spacetimes} defines ovoid spacetimes using the induced metric on confocal ovoids. In Section \ref{sec:solutions}, exact solutions to the Einstein field equations for a static anisotropic fluid in an ovoid spacetime are obtained.
 
 \section{Cartesian ovals} %Mencionar: *Cond. de existencia, *Ecs. bipolares (3er foco)
 \label{sec:Cartesian ovals}
-A Cartesian oval is the locus of points $M$ such that $cr+cr’$ is constant, where $r$ and $r’$ are the distances from $M$ to two fixed points $F$ and $F’$, called foci, and $c$ and $c’$ are real constants \cite{williamson1873, johnson1875bipolar}. Since $c$ and $c’$ cannot both be zero, one can assume $c\neq 0$ without loss of generality. Hence, the equation satisfied by Cartesian ovals can be written as
+
+\subsection{Cartesian ovals as a three foci curve}
+
+A Cartesian oval is the locus of points $M$ such that $c\overline{MF}+c'\overline{MF'}$ is constant, where $\overline{MF}\equiv r$ and $\overline{MF'} \equiv r’$ are the distances from $M$ to two fixed points $F$ and $F’$, called foci, and $c$ and $c’$ are real constants \cite{williamson1873, johnson1875bipolar}. Since $c$ and $c’$ cannot both be zero, one can assume $c\neq 0$ without loss of generality. Hence, the equation satisfied by Cartesian ovals can be written as
 \be 
 	r+ar' = u\,, \label{eq:oval}
 \ee
 where $a$ and $u$ are real constants. 
 
-For any oval with known foci $F$ and $F'$, there exists a third point $F''$ such that the oval satisfies an analog of equation \ref{eq:oval} of the form $r+\alpha r''=\beta$, where $r$ and $r''$ are the distances from $M$ to $F$ and $F''$, and $\alpha$ and $\beta$ are real constants. This point lies on the line through $F$ and $F'$ and is called the third focus. 
-
-The existence of this point was first noted by Chasles; see Note XXI in \cite{chasles1837}. In \cite{chasles1837, williamson1873}, geometric constructions are used to obtain the third focus. Here, an algebraic approach that recovers the results of \cite{johnson1875bipolar} is presented.
+For any oval with known foci $F$ and $F'$, there exists a third point $F''$ such that the oval satisfies an analog of equation \ref{eq:oval} of the form $r+\sigma r''=\delta$, where $r$ and $r''$ are the distances from $M$ to $F$ and $F''$, and $\sigma$ and $\delta$ are real constants. This point lies on the line through $F$ and $F'$ and is called the third focus. The existence of this point was first noted by Chasles \cite{chasles1837}, as shown in Note XXI. In \cite{chasles1837, williamson1873}, geometric constructions are used to obtain the third focus. Here, an algebraic approach that recovers the results of \cite{johnson1875bipolar} is presented.
 
 To determine the position of the third focus, consider an $xy$-coordinate system centered at $F$ with $F'$ at $(\tau,0)$, as shown in Fig. \ref{fig:oval}. Allow $\tau$ to be either positive or negative. In this coordinate system, equation \ref{eq:oval} can be written as 
 \be
-	\sqrt{x^2+y^2}+a \sqrt{(x-\tau)^2+y^2}=u\,. \label{eq:oval xy-cord}
+	\sqrt{x^2+y^2}+a \sqrt{(x-\tau)^2+y^2}=u\,, \label{eq:oval xy-cord}
 \ee
-In polar coordinates, related to $x$ and $y$ by $x=r\cos\theta$ and $y=r\sin\theta$, this equation becomes $r+\sqrt{r^2-2r\tau\cos\theta+\tau^2}=u$. Consider that $F''$ is located at $(\tau+\xi,0)$ where $\xi\in\Re$. By definition, the distance from $M$ to $F''$ is
+which in polar coordinates becomes $r+\sqrt{r^2-2r\tau\cos\theta+\tau^2}=u$. Consider a point $F''$ located at $(\tau+\xi,0)$, where $\xi\in\Re$. By definition, the distance from $M$ to $F''$ is
 \begin{align}
 	r'' &= \sqrt{(x-\tau-\xi)^2+y^2}\,, \\
-		&= \sqrt{r^2-2r(\tau+\xi)\cos\theta+(\tau+\xi)^2}\,.
+		&= \sqrt{r^2-2r(\tau+\xi)\cos\theta+(\tau+\xi)^2}\,,
 \end{align}
 From the last equation, one obtains $-2r\tau\cos\theta=\tau(r''^2-r^2-(\tau+\xi)^2)/(\tau+\xi)$. Hence, equation \ref{eq:oval xy-cord} in polar coordinates becomes
 \be
@@ -172,14 +174,14 @@ This equation can be solved for $r''^2$, yielding
 \be
 	r''^2 = \frac{(u-r)^2(\tau+\xi)}{a^2\tau}+(\tau+\xi)\xi -\frac{r^2\xi}{\tau}\,.
 \ee
-Now, one can group the terms in $r$ and complete the square on the right-hand side of the equation as
+Now, one can group the terms in $r$ and complete the square on the right-hand side of this equation as
 \be
-	r''^2=\frac{1}{a^2\tau}\left(\tau+(1-a^2)\xi\right)\left(r-\frac{u(\tau+\xi)}{\tau+(1-a^2)\xi}\right)^2 + \frac{\xi(\xi+\tau)}{\xi+\tau/(1-a^2)}\left(\xi-\frac{u^2-\tau^2}{(1-a^2)\tau}\right)\,. \label{eq:def xi}
+	r''^2=\frac{1}{a^2\tau}\left(\tau+(1-a^2)\xi\right)\left(r-\frac{u(\tau+\xi)}{\tau+(1-a^2)\xi}\right)^2 + \frac{\xi(\xi+\tau)}{\xi+\tau/(1-a^2)}\left(\xi-\frac{u^2-\tau^2}{(1-a^2)\tau}\right)\,. \label{eq:r''^2}
 \ee
 %\be
 %	r''^2=\frac{\tau+\xi}{a^2\tau}\left(1-\frac{a^2\xi}{\tau+\xi}\right)\left(r-\frac{u(\tau+\xi)}{\tau+(1-a^2)\xi}\right)^2 + \frac{\xi(\xi+\tau)}{\xi+\tau/(1-a^2)}\left(\xi-\frac{u^2-\tau^2}{(1-a^2)\tau}\right)\,. \label{eq:def xi}
 %\ee
-The second term is zero when $\xi=0$, $\xi=-\tau$, and $\xi=\frac{u^2-\tau^2}{(1-a^2)\tau}$. For these values of $\xi$, the relation between $r''$ and $r$ is linear. Replacing $\xi$ with $0$, $-\tau$, and $\frac{u^2-\tau^2}{(1-a^2)\tau}$, equation \ref{eq:def xi} becomes, respectively,
+The second term in the right-hand side of this equation is zero when $\xi=0$, $\xi=-\tau$, or $\xi=\frac{u^2-\tau^2}{(1-a^2)\tau}$. For these values of $\xi$, equation \ref{eq:r''^2} can be written as a linear equation in $r''$ and $r$. Replacing $\xi$ with $0$, $-\tau$, and $\frac{u^2-\tau^2}{(1-a^2)\tau}$, equation \ref{eq:r''^2} becomes, respectively,
 \be
 	r''^2 = \frac{(u-r)^2}{a^2}\,,
 \ee
@@ -189,51 +191,59 @@ The second term is zero when $\xi=0$, $\xi=-\tau$, and $\xi=\frac{u^2-\tau^2}{(1
 \be
 	r''^2 = \frac{u^2}{a^2\tau^2}\rob{r-\frac{u^2-a^2\tau^2}{u(1-a^2)}}^2\,. \label{eq:oval^2 third_focus}
 \ee
-Thus, the known cases are recovered, and one new result is obtained. The first case, $\xi=0$, corresponds to $F''$ coinciding with $F'$, while the second, $\xi=-\tau$, corresponds to $F''$ coinciding with $F$. The third case is the only genuinely new result. In this case, $F''$ is located at $(\frac{u^2-a^2\tau^2}{(1-a^2)\tau},0)$. By convention, the expression for $\xi$ is henceforth fixed as
+Thus, the known cases are recovered, and one new result is obtained. The first case, $\xi=0$, corresponds to $F''$ coinciding with $F'$, while the second, $\xi=-\tau$, corresponds to $F''$ coinciding with $F$. The third case is the only genuinely new result. In this case, $F''$ is located at $(\frac{u^2-a^2\tau^2}{(1-a^2)\tau},0)$ and from equation \ref{eq:oval^2 third_focus}, it follows that
+\be
+	r'' = \pm \frac{u}{a\tau}\rob{r-\frac{u^2-a^2\tau^2}{u(1-a^2)}} \label{eq:oval^2 third_focus_2}
+\ee
+ By convention, the expression for $\xi$ is henceforth fixed as
 \be
 	\xi = \frac{u^2-\tau^2}{(1-a^2)\tau}\,. \label{eq:def xi}
 \ee
 
-From equation \ref{eq:oval^2 third_focus}, it follows an equation of the form $r''=\pm c_1(r-c_2)$, where $c_1$ and $c_2$ are constants. The $\pm$ sign must be replaced with the sign of $\tau(1-a^2)$ so that the resulting curve coincides with the curve defined by equation \ref{eq:oval}, as one can verify in plotting software. The resulting linear equation in $r$ and $r''$ is therefore
+Equation \ref{eq:oval^2 third_focus_2} has the form $r''=\pm c_1(r-c_2)$, where $c_1$ and $c_2$ are constants. The $\pm$ sign must be replaced with the sign of $-\tau(1-a^2)$ so that the resulting curve coincides with the curve defined by equation \ref{eq:oval}, as one can verify using a plotting software. The resulting linear equation in $r$ and $r''$ is therefore
 \be
 	\sign(\tau(1-a^2)) ar''+\frac{u}{\tau}r=(\tau+\xi)\,,\label{eq:oval bipolar2}
 \ee
-where $\sign(x):=x/|x|$ is the sign function and $\xi$ is given by equation \ref{eq:def xi}. Substituting $r$ from \ref{eq:oval}, this equation becomes
+where $\sign(x):=x/|x|$ is the sign function and $\xi$ is given by equation \ref{eq:def xi}. Substituting $r$ from equation \ref{eq:oval}, this equation becomes
 \be 
 	\sign(\tau(1-a^2))r''-\frac{u}{\tau}r'=a\xi\,. \label{eq:oval bipolar3}
 \ee
-Equations \ref{eq:oval}, \ref{eq:oval bipolar2}, and \ref{eq:oval bipolar3} are the so-called bipolar equations of the Cartesian oval \cite{johnson1875bipolar}.
+Equations \ref{eq:oval}, \ref{eq:oval bipolar2}, and \ref{eq:oval bipolar3} are the so-called bipolar equations for the Cartesian oval \cite{johnson1875bipolar}.  
 
-The procedure for finding $F''$ just shown here has not been presented in this form elsewhere. However, the equations presented here are equivalent to those in \cite{johnson1875bipolar}. The authors considered it a good idea to revisit Johnson's work using modern, clean notation.
+The equations presented here for finding the third focus are equivalent to those in \cite{johnson1875bipolar}. The authors considered it worthwhile to revisit Johnson's results using modern, clean notation.
 
 %To end this section, consider the next question: given the points $F$ and $F'$, for which values of $a$ and $u$ the curve defined by equation \ref{eq:oval} is not empty. As it turns out, $a$ and $u$ must satisfy $u\geq \min(1,a)|\tau|$ if $a>-1$, $u\leq|\tau|$ if $a<-1$ and $-|\tau|\leq u\leq |\tau|$ if $a=-1$, where $\min(x, y)$ is defined as the minimum value between $x$ and $y$. These are the \textit{existence conditions} for Cartesian ovals.
 
-In \cite{quelet1829}, Quelet first observed that Cartesian ovals can be obtained by intersecting two cones with parallel axes. From equation \ref{eq:oval xy-cord}, it is easy to see that Cartesian ovals can be obtained by intersecting the cones defined by the equations
+% Ovals don't own the existence condition, they are associated to that conditions
+% In this sense, it is better to say "existence condition for ovals" rather than "existence condition of ovals", since the earlier would sound as if the conditions belong to the ovals.
+\subsection{Existence condition for ovals}
+
+In \cite{quelet1829}, Quelet first noted that Cartesian ovals can be obtained by intersecting two cones with parallel axes. From equation \ref{eq:oval xy-cord}, it is clear that Cartesian ovals can be obtained from the intersection curve of the cones defined by
 \be
 	z=\sqrt{x^2+y^2}\,,
 \ee
 \be
 	z=u-a\sqrt{(x-\tau)^2+y^2}\,.
 \ee
-Let the first be called the fixed cone (FC) and the second the movable cone (MC). The values of $u$, $a$, and $\tau$ control the location of the apex and the apex angle of the MC. For some values of these constants, the two cones may not intersect. In such cases, one says that the curve is empty, i.e., that no point satisfies equation \ref{eq:oval}.
+Let the first cone be the fixed cone (FC) and the second the movable cone (MC). The values of $u$, $a$, and $\tau$ determine the apex location and apex angle of the MC. For certain values of these constants, the two cones may not intersect. In such cases, the curve is said to be empty, i.e., that no point satisfies equation \ref{eq:oval xy-cord}.
 
-Hence, by analyzing when cones intersect each other, one can obtain the \textit{existence condition} on $u$, $a$ and $\tau$ such that the curve defined by equation \ref{eq:oval xy-cord} is nonempty. This analysis can be divided into three main cases, $|a|<1$, $a>1$ and $a<-1$, and two limit cases, $a=\pm 1$. For $|a|<1$, the cones intersect if the $z$-intercept of the MC is at or above the origin, as shown in Fig. \ref{fig:cones_1_3}. This implies $u-a|\tau|\geq 0$. For $a>1$, the cones intersect if the apex of the MC is at or above the FC, as shown in Fig. \ref{fig:cones_2_4}. Thus, $u\geq |\tau|$. Conversely, for $a<-1$, the cones intersect if the apex of the MC is at or below the FC, as shown in Fig. \ref{fig:cones_2_4}. Then, one needs $u\leq|\tau|$.
+Hence, by analyzing when the cones intersect each other, one can obtain the condition on $u$, $a$ and $\tau$ such that the curve defined by equation \ref{eq:oval xy-cord} is nonempty. This analysis can be divided into three main cases, $|a|<1$, $a>1$ and $a<-1$, and two limit cases, $a=\pm 1$. For $|a|<1$, the cones intersect if the $z$-intercept of the MC is at or above the origin, as shown in Fig. \ref{fig:cones_1_3}. This implies $u-a|\tau|\geq 0$. For $a>1$, the cones intersect if the apex of the MC is at or above the FC, as shown in Fig. \ref{fig:cones_2_4}. Thus, one needs $u\geq |\tau|$ in this case. Conversely, for $a<-1$, the cones intersect if the apex of the MC is at or below the FC, as shown in Fig. \ref{fig:cones_2_4}. Then, one must have $u\leq|\tau|$.
 
-In the limiting cases $a=\pm 1$, the two cones have the same apex angle of $\pi/2$. For $a=1$, the cones open in opposite directions. In this case, the apex and the $z$-intercept of the MC are both at or above the FC when $u\geq|\tau|$. This is the existence condition for $a=-1$. In the last case, $a=-1$, two conditions are required: the MC's apex must be at or below the FC, and the MC's $z$-intercept must be at or above the origin. This translates to $-|\tau|\leq u \leq |\tau|$.
+In the limiting cases $a=\pm 1$, the two cones have the same apex angle of $\pi/2$. For $a=1$, the cones open in opposite directions. In this case, the apex and the $z$-intercept of the MC are both at or above the FC when $u\geq|\tau|$. This is the existence condition for $a=-1$. In the other case, $a=-1$, two conditions are required: the MC's apex must be at or below the FC, and the MC's $z$-intercept must be at or above the origin. This translates to $-|\tau|\leq u \leq |\tau|$.
 
-The existence condition of Cartesian ovals can be summarized as follows
+The existence condition for Cartesian ovals can be summarized as follows
 \be
-u\geq \min(1,a)|\tau|,\qquad \text{if } a>-1;	\label{eq:cond_c1}
+	u\geq \min(1,a)|\tau|,\qquad \text{if } a>-1;	\label{eq:cond_c1}
 \ee
 \be
-u\leq|\tau|,                  \qquad \text{if } a<-1;	\label{eq:cond_c2}
+	u\leq|\tau|, \qquad \text{if } a<-1;	\label{eq:cond_c2}
 \ee 
 \be
--|\tau|\leq u\leq|\tau|,      \qquad \text{if } a=-1\,. \label{eq:cond_c3}
+	-|\tau|\leq u\leq|\tau|, \qquad \text{if } a=-1\,, \label{eq:cond_c3}
 \ee
-where $\min(x, y)$ is defined as the minimum of $x$ and $y$. As far as the authors know, the existence conditions \ref{eq:cond_c1}-\ref{eq:cond_c3} are not in the literature. Nevertheless, one can argue that they are implicit in the work of Descartes \cite{descartes1637}, and they are mentioned by R. Ferréol on his math blog \cite{mathcurve}. At the time of writing this article, the condition for $a< -1$ in \cite{mathcurve} is incorrect, but the other one is correct. %One could also argue that these conditions are implicit in the work of descartes \cite{descartes1637}.
+where $\min(x, y)$ is the minimum of $x$ and $y$. As far as the authors know, the existence conditions \ref{eq:cond_c1}-\ref{eq:cond_c3} do not appear in the literature. Nevertheless, one can argue that they are implicit in the work of Descartes \cite{descartes1637}, and they are mentioned by R. Ferréol on his math blog \cite{mathcurve}. At the time of writing this article, only the condition \ref{eq:cond_c1} for $a>-1$ coincides with the one in \cite{mathcurve}.
 
-%As an interesting final remark, the apex of the MC is a point in the intersection curve when $u=-\min(-1,-|a|)|\tau|$. For this value of $u$, the Cartesian oval is a limaçon of Pascal, or a part of it.
+%At the time of writing this article, the condition for $a< -1$ in \cite{mathcurve} is incorrect, but the other one is correct.
 
 \begin{figure}
 	\centering
@@ -253,9 +263,9 @@ where $\min(x, y)$ is defined as the minimum of $x$ and $y$. As far as the autho
 
 \section{Two remarkable families of ovals and their respective orthogonal curves}
 \label{sec:families of ovals}
-This section describes two families of Cartesian ovals that will be used to construct orthogonal coordinates. For each family, $\mathfrak{F}$, a second family of curves, $\mathfrak{G}$, will be obtained so that the members of $\mathfrak{F}$ intersect those of $\mathfrak{G}$ at right angles. The resulting pairs of families, such as $\mathfrak{F}$ and $\mathfrak{G}$, produce a curvilinear grid with right angles at each vertex. This allows the construction of an orthogonal coordinate system, as shown in Section \ref{sec:characterization}.
+This section describes two families of Cartesian ovals that will be used to construct orthogonal coordinates. For each family, $\mathfrak{F}$, a second family of curves, $\mathfrak{G}$, will be obtained so that the members of $\mathfrak{F}$ intersect those of $\mathfrak{G}$ at right angles. The resulting pairs of families, such as $\mathfrak{F}$ and $\mathfrak{G}$, produce a coordinate grid with right angles at each vertex. This allows the construction of an orthogonal coordinate system, as will be shown in Section \ref{sec:characterization}.
 
-The members of each family are characterized by the value of a parameter $u_i$, so each vertex on the grid is labeled with a pair $(u_1, u_2)$. The relations between this pair of values and the $xy$-coordinates of the vertex, $(x,y)$, with respect to a given $xy$-coordinate system are derived in each subsection. These relations provide the coordinate transformations between the rectangular and the new coordinates, as will be shown in Section \ref{sec:characterization}.
+The members of each family are characterized by the value of a parameter $u_i$, so each vertex on the grid is labeled with a pair $(u_1, u_2)$. The relations between this pair of values and the $xy$-coordinates of the vertex, $(x,y)$, with respect to a given $xy$-coordinate system are derived in each subsection. These relations will provide the coordinate transformations between the rectangular and the new coordinates.
 
 \subsection{Confocal ovals and synecdolas} % *Def. sinécdolas, *Mapeo inverso [de (u,v) a (x,y)], *Mencionar caso a=1, *Hacer caso a=1/3
 \label{sec:confocal}
@@ -263,24 +273,24 @@ Consider the family of level curves of the function $f$ defined by
 \be
 	f(x,y)=\sqrt{x^2+y^2}+a \sqrt{(x-\tau)^2+y^2}\,,
 \ee
-where $a$ and $\tau$ are fixed constants. These level curves are ovals with the same focal distance $|\tau|$ and the same value of $a$. Hence, they can be called \textit{confocal ovals} or, more precisely, \textit{biconfocal ovals} since they share the same two of the three foci. Here, they are referred to simply as confocal ovals. The level curves satisfy the equation $f(x,y)=u$, where $u$ is a constant. As the value of $u$ varies, the curves cover the entire $xy$-plane, as shown in Fig. \ref{fig:confocal_ovals}. The quantity $u$ may take only values that satisfy one of the existence conditions of ovals \ref{eq:cond_c1}-\ref{eq:cond_c3}, depending on the value of $a$.
+where $a$ and $\tau$ are fixed constants. These level curves are ovals with the same focal distance $|\tau|$ and the same value of $a$. Hence, they can be called \textit{confocal ovals} or, more precisely, \textit{biconfocal ovals} since they share the same two of the three foci. Here, they are referred to simply as confocal ovals. The level curves satisfy the equation $f(x,y)=u$, where $u$ is a constant. As the value of $u$ varies, the curves cover the entire $xy$-plane, as shown in Fig. \ref{fig:confocal_ovals}. The quantity $u$ may take only values that satisfy one of the existence conditions for ovals \ref{eq:cond_c1}-\ref{eq:cond_c3}, depending on the value of $a$.
 
 \begin{figure}[h]
 	\centering
 	\includegraphics[width = \linewidth]{images_low_resolution/ovals.png}
-	\caption{Level curves of $f$ for different values of $a$ with $\tau=1$, which correspond to confocal ovals. The subfigures show the four characteristic sets of confocal ovals for $a\in(-\infty,-1)$, $a\in(-1,0)$, $a\in(0,1)$, and $a\in(1,\infty)$, in order from left to right. All subfigures share the same $y$-axis limits. Some ovals are colored to illustrate how they change as $a$ varies; the red one corresponds to $u=0.4$, while the green one corresponds to $u=1.25$.} %In the limit cases $a=-1,0,1$, confocal ovals become branches of hyperbolas, circles, and ellipses, respectively.
+	\caption{Level curves of $f$ for different values of $a$ with $\tau=1$. These curves correspond to confocal ovals. The subfigures show the four characteristic sets of confocal ovals for $a\in(-\infty,-1)$, $a\in(-1,0)$, $a\in(0,1)$, and $a\in(1,\infty)$, in order from left to right. All subfigures share the same $y$-axis limits. Some ovals are colored to illustrate how they change as $a$ varies; the red one corresponds to $u=0.4$, while the green one corresponds to $u=1.25$.} %In the limit cases $a=-1,0,1$, confocal ovals become branches of hyperbolas, circles, and ellipses, respectively.
 	\label{fig:confocal_ovals}
 \end{figure}
 
-Consider now the problem of finding the curves orthogonal to confocal ovals. The gradient of $f$ is a vector field orthogonal to the level curves of $f$. Therefore, the orthogonal curves must have tangent vectors proportional to $\nabla f$. This condition yields
+Consider the problem of finding the curves orthogonal to confocal ovals. Since the gradient of $f$ is composed of vectors orthogonal to the level curves of $f$, the orthogonal curves must have tangent vectors aligned with $\nabla f$. Considering orthogonal curves described by $y=y(x)$, this condition implies
 \be
 	\frac{dy}{dx}=\frac{f_x}{f_y}\,, \label{eq:ODE}
 \ee
-where the subscripts in $f$ denote partial derivatives and the orthogonal curves are assumed to satisfy $y=y(x)$. In its differential form, the equation \ref{eq:ODE} becomes $f_ydx-f_x dy=0$, an inexact differential equation. However, it can be made exact by the integrating factor $w=1/y$, so that $(f_y/y)dx-(f_x/y) dy=0$ is exact. The implicit solution of this equation is
+where the subscripts in $f$ denote partial derivatives. This equation can be written as an inexact differential equation, $f_ydx-f_x dy=0$. However, it can be made exact by the integrating factor $w=1/y$, so that $(f_y/y)dx-(f_x/y) dy=0$ is exact. The implicit solution of this differential equation is
 \be
 	\arcsinh{\rob{\frac{x}{y}}} + a\, \arcsinh{\rob{\frac{x-\tau}{y}}} = v\,,
 \ee
-where $v$ is a real constant. Let $g$ be a function with $g(x,y)$ defined as the left-hand side of this equation. The set of level curves of $g$ will be called synecdolas. Each of these curves crosses each confocal oval at a right angle. For $a=1$, synecdolas become sections of hyperbolas, and for $a=-1$ they become the upper or lower halves of ellipses. In Figure \ref{fig:synecdolas}, some synecdolas are plotted for $a=1/2$. The term \textit{synecdola} derives from the figure of speech ``synecdoche''. The term was coined, inspired by the similarity between the names of conic sections and figures of speech, such as circle and circumlocution, ellipse and ellipsis, hyperbola and hyperbole, and parabola and parable.
+where $v$ is a real constant. Let $g$ be a function with $g(x,y)$ defined as the left-hand side of this equation. The set of level curves of $g$ will be called synecdolas. These curves intersect each confocal oval at a right angle. For $a=1$, synecdolas become sections of hyperbolas, and for $a=-1$ they become the upper or lower halves of ellipses. In Figure \ref{fig:synecdolas}, some synecdolas are plotted for $a=1/2$. The term \textit{synecdola} derives from the figure of speech ``synecdoche''. The term was coined inspired by the similarity between the names of conic sections and figures of speech, such as circle and circumlocution, ellipse and ellipsis, hyperbola and hyperbole, and parabola and parable.
 
 \begin{figure}[h]
 	\centering
@@ -294,17 +304,17 @@ Synecdolas and confocal ovals form a pair of families whose curves intersect at 
 	x=\frac{\tau\sinh t}{\sinh t-\sinh{\rob{\frac{v-\tau}{a}}}}\,, \label{eq:x(t)}
 \ee
 \be
-	y=\frac{\tau}{\sinh t-\sinh{\rob{\frac{v-\tau}{a}}}}\,. \label{eq:y(t)}
+	y=\frac{\tau}{\sinh t-\sinh{\rob{\frac{v-\tau}{a}}}}\,, \label{eq:y(t)}
 \ee
-These are the parametric equations for the synecdola. Substituting them into $g(x,y)=v$ yields $v=v$, so the equation is automatically satisfied. The remaining equation, $f(x,y)=u$, becomes
+These equations correspond to the parametric equations for the synecdola. Substituting them into $g(x,y)=v$ yields $v=v$, so the equation is automatically satisfied. The remaining equation, $f(x,y)=u$, becomes
 \be
 	\frac{|\tau|\rob{\cosh{t}+a\,\Cosh{\rob{\frac{v-t}{a}}}}}{\abb{\sinh t-\Sinh\rob{\frac{v-t}{a}}}} = u\,. \label{eq:general_u}
 \ee
-The expression in absolute value equals $|y|$, where $y$ is taken from equation \ref{eq:y(t)}. Hence, by considering inverse relations with $y=y(u,v)>0$, equation \ref{eq:general_u} becomes
+The expression in absolute value coincides with $|y|$, where $y$ is taken from equation \ref{eq:y(t)}. Hence, by considering inverse relations with $y=y(u,v)>0$, the absolute value can be eliminated, and equation \ref{eq:general_u} can be rearranged as
 \be 
 	(a\tau-u)s^{\frac{2}{a}}+ \e^{\frac{v}{a}}(\tau-u)s^{\frac{1}{a}+1} + \e^{\frac{v}{a}}(\tau+u)s^{\frac{1}{a}-1}+\e^{\frac{2v}{a}}(a\tau+u) = 0\,,
 \ee
-where $s=\e^t$. For $a\in\mathbb{Q}$, this equation can be rearranged into an algebraic equation of a certain degree, as shown in Appendix \ref{sec:appendix-s-equation}. For $a=1/3$, it becomes a cubic in $s^2$ whose positive real solution for $s$ is
+where $s=\e^t$. For $a\in\mathbb{Q}$, this equation can be expressed as an algebraic equation of a certain degree, as shown in Appendix \ref{sec:appendix-s-equation}. For $a=1/3$, it becomes a cubic in $s^2$ whose positive real solution for $s$ is
 \be
 	s = \sqrt{\alpha_+^{\frac{1}{3}} + \alpha_{-}^{\frac{1}{3}}-\frac{(\tau-u)\e^{3v}}{\tau-3u}}\,, \label{eq:sol_s1/3}
 \ee
@@ -313,43 +323,43 @@ where
 	\alpha_{\pm} =& \pm \frac{\e^{\frac{9v}{2}}}{(\tau-3u)^2}\sqrt{\sqb{(\tau+3u)(\tau-u)^3\e^{3v}-(\tau-3u)(\tau+u)^3}(\e^{3v}-1)} \notag \\  
 				&-\frac{\e^{6v}}{(\tau-3u)^3} \sqb{(\tau-u)^3\e^{3v}-(\tau-3u)(\tau^2+3u^2)}\,. \label{eq:sol_s1/3_aux}
 \end{align}
-Substituting equation \ref{eq:sol_s1/3} into equations \ref{eq:x(t)} and \ref{eq:y(t)} with $t=\ln s$ yields the desired relations $x=x(u,y)$ and $y=y(u,v)$. For a proof that the solution \ref{eq:sol_s1/3} is the unique positive real solution, see Appendix \ref{sec:appendix-r1}. In this appendix, it is shown that the expression under the square root in equation \ref{eq:sol_s1/3} is positive when $v\in\Re$ and when $u$ satisfies the existence condition of ovals, which in this case is $u\geq|\tau|/3$.
+Substituting equation \ref{eq:sol_s1/3} into equations \ref{eq:x(t)} and \ref{eq:y(t)} with $t=\ln s$ yields the desired relations $x=x(u,y)$ and $y=y(u,v)$. In Appendix \ref{sec:appendix-r1}, it is shown that the solution given by equation \ref{eq:sol_s1/3} is the unique positive solution for $s$. In particular, it is shown that the expression under the square root in equation \ref{eq:sol_s1/3} is positive when $v\in\Re$ and when $u$ satisfies the existence condition for ovals, namely $u\geq|\tau|/3$.
 
 \subsection{Triconfocal ovals} % *Def. familia de óvalos triconfocales, *Mapeo inverso, *Caso especial de coordenadas de caracolas de Pascal
 \label{sec:triconfocal}
-Section \ref{sec:Cartesian ovals} showed that Cartesian ovals can be related to three special points called foci. Given two foci and the values of $a$ and $u$, the position of the third focus can be obtained from equation \ref{eq:def xi}. Alternatively, if the three foci are known, the value of $a$ or $u$ can be obtained up to a sign from the same equation. Knowledge of the three foci and one point $M$ determines two possible values of both $a$ and $u$ from equations \ref{eq:oval} and \ref{eq:def xi}, which determine two Cartesian ovals. Thus, through any point, two ovals can be drawn having the same three foci. This procedure is used in this subsection to construct two families of ovals that intersect at right angles. 
+Section \ref{sec:Cartesian ovals} showed that Cartesian ovals can be related to three special points called foci. Given two foci and the values of $a$ and $u$, the position of the third focus can be obtained from equation \ref{eq:def xi}. Alternatively, if the three foci are known, the value of $a$ or $u$ can be obtained up to a sign from the same equation. Knowledge of the three foci and one point $M$ determines two possible values of both $a$ and $u$ from equations \ref{eq:oval} and \ref{eq:def xi}, which determine two Cartesian ovals. Thus, through any point, two ovals can be drawn having the same three foci. This procedure to construct ovals is used in this subsection to obtain two families of ovals that intersect at right angles. 
 
-Consider the equation \ref{eq:oval} that relates $\xi$ to the other parameters of the oval. From this equation, one can solve for $u$ so that equation \ref{eq:oval} becomes
+As it was said, equation \ref{eq:oval} relates $\xi$ to the other parameters of the oval. From this equation, one can solve for $u$ so that equation \ref{eq:oval} becomes
 \be
 	r+ar' = \pm \sqrt{\xi\tau(1-a^2)+\tau^2}\,.
 \ee
-Squaring both sides and solving for $a$ yields $a = (-rr'\pm \tau r'')/(r'^2+\xi\tau)$. Let $\alpha$ and $\beta$ be defined as
+Squaring both sides and solving for $a$ yields $a = (-rr'\pm \tau r'')/(r'^2+\xi\tau)$. Based on this equation, let $\alpha$ and $\beta$ be defined as
 \be
 	\alpha =  \frac{-\sqrt{x^2+y^2}\sqrt{(x-\tau)^2+y^2} + \tau \sqrt{(x-\tau-\xi)^2+y^2}}{(x-\tau)^2+y^2+\xi\tau}\,, \label{eq:alpha}
 \ee
 \be
 	\beta = -\frac{\sqrt{x^2+y^2}\sqrt{(x-\tau)^2+y^2} + \tau \sqrt{(x-\tau-\xi)^2+y^2}}{(x-\tau)^2+y^2+\xi\tau}\,, \label{eq:beta}
 \ee
-with $\tau$ and $\xi$ fixed as constants. The $\alpha$- and $\beta$-constant curves are ovals that share the same three foci and are therefore called \textit{triconfocal ovals}. It is straightforward to show that these curves intersect at right angles, i.e., that $\nabla \alpha\cdot \nabla\beta = 0$. In Figure \ref{fig:triconfocal ovals}, some triconfocal ovals are shown for $\tau=1$ and $\xi=1$. In \cite{williamson1873}, it is also noted that Cartesian ovals with the same three foci meet orthogonally.
+with $\tau$ and $\xi$ fixed as constants. The $\alpha$- and $\beta$-constant curves are ovals that share the same three foci. For this reason, they are called \textit{triconfocal ovals} in this work. It is straightforward to show that these curves intersect at right angles, i.e., that $\nabla \alpha\cdot \nabla\beta = 0$. In Figure \ref{fig:triconfocal ovals}, some triconfocal ovals are shown for $\tau=1$ and $\xi=1$. The fact that Cartesian ovals with the same three foci meet orthogonally was also noted by Williamson in \cite{williamson1873}.
 
-To find the inverse relations, $x=x(\alpha,\beta)$ and $y=y(\alpha,\beta)$, it is convenient to note that
+To obtain the inverse relations, $x=x(\alpha,\beta)$ and $y=y(\alpha,\beta)$, it is convenient to note that
 \be
 	\alpha+\beta = -\frac{2rr'}{\xi\tau+r'^2}\,, \label{eq:A1}
 \ee
 \be
 	\alpha\beta= \frac{-\xi\tau-\tau^2+r^2}{\xi\tau+r'^2}\,. \label{eq:A2}
 \ee
-From equation \ref{eq:A1}, one obtains $r=-(\alpha+\beta)(\xi\tau+r'^2)/2r'$. Substituting this expression into equation \ref{eq:A2} and reorganizing yields
+From equation \ref{eq:A1}, one obtains $r=-(\alpha+\beta)(\xi\tau+r'^2)/2r'$. Substituting this expression for $r$ into equation \ref{eq:A2} and reorganizing yields
 \be
 (\beta -\alpha)^2 r'^{4} + 2\rob{-2\tau + \xi\rob{\alpha^2+\beta^2-2}}\tau r'^2 + \xi^2 \tau^2 (\alpha +\beta)^2 = 0\,.
 \ee
-The solutions to this equation for $\mu\equiv r'^2$ are 
+The solutions to this quadratic equation in $r'^2\equiv\mu$ are 
 \be
 	\mu_{\pm} = 
 \frac{2 \tau^{2}+\left(2-\alpha^{2}-\beta^{2}\right)\xi\tau \pm 2 \sqrt{\tau^{2} \left(\beta^{2} \xi -\tau -\xi \right) \left(\alpha^{2} \xi -\tau -\xi \right)} }{\left(\beta -\alpha \right)^{2}}\,.
 \ee
 %It might be important to note that $\mu_{+}-\mu_{-}= 4 \sqrt{\tau^2 \left(\beta^2 \xi -\tau -\xi \right) \left(\alpha^2 \xi-\tau - \xi\right)}/ (\beta -\alpha)^2>0$, so that $\mu_{+}>\mu_{-}$. Taking $r'^2=\mu_{\pm}$, one obtains
-Since $\mu_{+}-\mu_{-}= 4 \sqrt{\tau^2 \left(\beta^2 \xi -\tau -\xi \right) \left(\alpha^2 \xi-\tau - \xi\right)}/ (\beta -\alpha)^2>0$, it follows that $\mu_{+}>\mu_{-}$. Thus, one solution yields an oval larger than the other. The solution $r'^2=\mu_{\pm}$ yields
+Since $\mu_{+}-\mu_{-}= 4 \sqrt{\tau^2 \left(\beta^2 \xi -\tau -\xi \right) \left(\alpha^2 \xi-\tau - \xi\right)}/ (\beta -\alpha)^2>0$, it follows that $\mu_{+}>\mu_{-}$. Thus, one solution yields an oval larger than the other. The substitution $r'^2=\mu_{\pm}$ yields
 \begin{align}
 	x =& \Big[ \pm\rob{\alpha  \beta -1} \sqrt{\tau^2 \rob{\beta^2 \xi -\tau -\xi } \rob{\alpha^2 \xi -\tau -\xi }}\notag \\
 	&-\sqb{\rob{1-\alpha^2+\alpha  \beta -\beta^2} \tau +\xi  \rob{\alpha^2-1} \rob{\beta^2-1}} \tau\Big]  \frac{1}{\rob{\beta -\alpha }^2 \tau}\,, \label{eq:xAB}
@@ -358,8 +368,11 @@ Since $\mu_{+}-\mu_{-}= 4 \sqrt{\tau^2 \left(\beta^2 \xi -\tau -\xi \right) \lef
 \ee
 where the equations $x=(r^2+\tau^2-r'^2)/(2\tau)$ and $y^2=r^2-(r^2+\tau^2-r'^2)^2/(4\tau^2)$, derived from the definitions of $r$ and $r'$ in terms of $x$ and $y$, were considered.
 
-\newpage
+%Two things are left for this section. On the first side, is left to prove that triconfocal ovals became Pascal limaçons when ... And, on the other side, we must find the existence condition for triconfocal ovals.
 
+Two important topics are left to be discussed in this section. On one hand, since triconfocal ovals have two free parameters $\tau$ and $\xi$, 
+
+\subsubsection{Triconfocal ovals as confocal Pascal limaçons}
 The coordinates just defined are indeed a family of coordinates that depend on $\tau$ and $\xi$. Some interesting cases are $\xi=0$ and $\xi=-\tau$, with $\tau$ being any nonzero real number. For these cases, the corresponding ovals became limaçons of Pascal. 
 
 This can be seen as follows. For $\xi=0$, one has $\alpha = (-r+\tau)/r'$. By the law of cosines, $r=\sqrt{r'^2+\tau^2+2r'\tau\cos\phi}$, see Fig. \ref{fig:oval}. Hence, one can find
@@ -376,6 +389,8 @@ For $\xi=0$, equations \ref{eq:xAB} and \ref{eq:yAB} become $x=\tau$ and $y^2=0$
 	y^2=-\frac{4\tau^2(\alpha^2-1)(\beta^2-1)}{(\beta-\alpha)^4}\,.
 \ee 
 This case may be considered as the simplest case of triconfocal oval coordinates.
+
+\subsubsection{Existence condition for triconfocal ovals}
 
 Finally, viewing $\alpha$ and $\beta$ as functions of $x$, $y$, $\xi$, and $\tau$ one finds that
 \be 
