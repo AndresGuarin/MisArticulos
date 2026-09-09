@@ -1,0 +1,47 @@
+%% Commands
+\newtheorem{theorem}{Theorem}%[section]
+\newtheorem{corollary}{Corollary}%[section]
+\newtheorem{lemma}{Lemma}%[section]
+
+%% Definitions
+% Comands
+\def\be{\begin{equation}}
+\def\ee{\end{equation}}
+
+% Functions
+\def\arcsinh{{\rm arcsinh}}
+\def\sign{{\rm sign}}
+\def\min{{\rm min}}
+
+% Expressions
+%\def\e{\text{e}}
+\def\e{e}
+\def\ehat{\hat{\text{\textbf{\textit{e}}}}}
+\def\ihat{\hat{\boldsymbol{\imath}}}
+\def\jhat{\hat{\boldsymbol{\jmath}}}
+\def\khat{\hat{\text{\textbf{\textit{k}}}}}
+\def\Sinh{{\rm sinh}}  %To avoid the small space between the function and the argument
+\def\Cosh{{\rm cosh}}
+
+
+%% New commands
+\newcommand{\rob}[1]{\left(#1\right)}    % Round brackets
+\newcommand{\sqb}[1]{\left[#1\right]}    % Square brackets
+\newcommand{\mb}[1]{\mathbf{#1}}         % Math bold face
+\newcommand{\cub}[1]{\left\{#1\right\}}  % Curly brackets
+\newcommand{\abb}[1]{\left|#1\right|}    % Absolute value brackets
+\newcommand{\mbi}[1]{\boldsymbol{#1}}    % Math bold and math italic face 
+\newcommand{\mc}[1]{\mathcal{#1}}        % \mathcal
+\renewcommand{\Re}{\mathbb{R}}           % Real numbers
+\newcommand{\ba}[1]{\begin{align}#1 \end{align}}          % Align
+\newcommand{\partd}[2]{\frac{\partial #1}{\partial #2}}   % Partial derivative
+\newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
+
+%% Theorem commands
+\theoremstyle{definition}
+\newtheorem{defn}{Definition}[section]
+\newtheorem{conj}{Conjecture}[section]
+\newtheorem{exmp}{Example}[section]
+\newtheorem{prop}{Proposition}[section]
+%\theoremstyle{Identity}
+%\newtheorem{identity}{Identity}[section]
