@@ -22,6 +22,13 @@
 \def\khat{\hat{\text{\textbf{\textit{k}}}}}
 \def\Sinh{{\rm sinh}}  %To avoid the small space between the function and the argument
 \def\Cosh{{\rm cosh}}
+\def\wfs{\mbi{\omega}_{\rm FS}}
+\def\Fermi{\mathscr{F}}
+\def\Obs{\mathscr{O}}
+
+%% Operators
+\def\cross_u{\!\times_{u}\!}
+\def\nablau{\nabla\!_u}
 
 
 %% New commands
@@ -30,12 +37,16 @@
 \newcommand{\mb}[1]{\mathbf{#1}}         % Math bold face
 \newcommand{\cub}[1]{\left\{#1\right\}}  % Curly brackets
 \newcommand{\abb}[1]{\left|#1\right|}    % Absolute value brackets
+\newcommand{\angb}[1]{\left<#1\right>}   % Angular brackets
 \newcommand{\mbi}[1]{\boldsymbol{#1}}    % Math bold and math italic face 
 \newcommand{\mc}[1]{\mathcal{#1}}        % \mathcal
-\renewcommand{\Re}{\mathbb{R}}           % Real numbers
 \newcommand{\ba}[1]{\begin{align}#1 \end{align}}          % Align
 \newcommand{\partd}[2]{\frac{\partial #1}{\partial #2}}   % Partial derivative
 \newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
+\newcommand{\A}[1]{\bf A#1}              % Activities of Methdology
+
+%% Rewrited commands
+\renewcommand{\Re}{\mathbb{R}}           % Real numbers
 
 %% Theorem commands
 \theoremstyle{definition}

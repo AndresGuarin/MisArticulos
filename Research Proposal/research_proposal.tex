@@ -36,7 +36,7 @@
 \begin{document}
 \thispagestyle{empty}
 \begin{center}
-	\Large{\bf Gyroscopic precession in stationary spacetimes} \\
+	\Large{\bf Gyroscopic precession in the $q$-metric} \\
 	\vspace{2.1cm}
 	
 	{\large Juan Andrés Guarín Rojas}\\
@@ -64,7 +64,7 @@
 \noindent {\Large \bf ABSTRACT} \\
 
 \vspace{0.1cm}
-\noindent {\bf TITLE}: Gyroscopic precession in stationary spacetimes \footnote{Thesis proposal.}.\\
+\noindent {\bf TITLE}: Gyroscopic precession in the $q$-metric \footnote{Thesis proposal.}.\\
 
 \noindent {\bf AUTHOR}: Juan Andrés Guarín Rojas \footnote{School of Physics, Faculty of Sciences, Universidad Industrial de Santander. Supervisor: Antonio Calixto Gutiérrez Piñeres, Ph.D.}.\\
 
@@ -83,31 +83,193 @@
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Introduction}
 
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Theoretical framework}
-\subsection{}
+Gyroscopes are devices that measure changes in the orientation of an accelerated observer. Ships and planes use them to measure rotation, ascent, or descent, depending on the case. They also play a key role in the proper functioning of global navigation satellite systems (GNSS). In this sense, gyroscopes are important for terrestrial navigation, both on the ground and in orbit around Earth. \\
+
+Gyroscopes may also be useful for interstellar navigation. This raises the question of how the gyroscope's behavior would change due to spacetime curvature or spacetime's Lorentzian nature. As it turns out, the gyroscope's spin, associated with its rotation, is Fermi-Walker transported along its worldline in the absence of torques. To an observer with a fixed laboratory with respect to the Frenet-Serret tetrad, the gyroscope’s spin appears to rotate about some axis. This leads to the notion of gyroscopic precession. The precession frequency is linked to physical phenomena such as the Lense-Thirring effect (frame-dragging), Thomas precession, and geodetic precession.\\
+
+Because of that, gyroscopes could be used to measure the effects of such phenomena, including frame-dragging. To date, it remains an open question whether Einstein’s theory of gravity accurately describes frame-dragging. Although more frame-dragging measurements have recently been made, additional experiments are needed to reduce measurement uncertainty. This is an important problem because it is related to the validity of Einstein’s theory of gravity in the context of non-static spacetimes. \\
+
+On the other hand, mass multipoles are important in physics because they characterize the mass deformation of astrophysical objects. Among the known exact solutions to the Einstein field equations with a mass quadrupole, the $q$-metric can be considered the simplest. It represents a static, axially symmetric spacetime whose associated mass multipoles depend on $q$. This metric has only the mass monopole and mass quadrupole as independent multipoles. For $q=1$, the quadrupole vanishes, and only the monopole survives; all higher multipoles are zero. In this case, the metric reduces to the Schwarzschild metric. For small deviations of $q$ from 1, one obtains the field of an object with a small mass quadrupole deformation. Thus, the $q$-metric could be useful to study the first-order effects of quadrupole deformation on the gyroscope precession frequency. \\
+
+As mentioned before, one important application of gyroscopes is in outer-space navigation, such as for a satellite orbiting an astrophysical object. In this context, one wonders whether the mass monopole alone is enough to describe gyroscope precession, or whether higher multipoles contribute significantly. Accordingly, this proposal asks: what contribution does the mass quadrupole make to gyroscope precession, specifically for the $q$-metric? Since the Schwarzschild case is recovered when $q=1$, this metric makes it easy to separate the monopole contribution from the quadrupole's first-order contribution. The results of this problem would provide insight into the more general problem of the mass quadrupole contribution to an arbitrary metric.\\
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-%\section{Problem statement}
+\section{Theoretical framework}
+
+\subsection{Notation}
+
+\begin{center}  \bf Indices \end{center}
+%\subsubsection*{Indices}
+Latin indices $a,b,c,\dots$ denote components in some arbitrary basis. They run from $0$ to $3$ unless otherwise specified.
+
+\noindent Greek indices $\alpha,\beta,\mu,\dots$ denote components in the local coordinate basis $\{\partial_\mu\}$. They run from $0$ to $3$ unless otherwise specified.
+
+\begin{center} \bf Metric and tetrads \end{center}
+%\subsubsection*{Metric and tetrads}
+The metric tensor is denoted as $\mbi{g}$, and the inverse metric, as $\mbi{g}^{-1}$.
+
+\noindent The signature of the metric is considered as $(-,+,+,+)$.
+
+\noindent The Frenet-Serret tetrad is denoted as $\{\mbi{e}_{(a)}\}$, with tetrad index written between parentheses.
+
+\begin{center} \bf Maps induced by the metric \end{center}
+%\subsubsection*{Maps induced by the metric}
+\noindent The natural isomorphism between the cotangent and the tangent bundle are denoted by $\sharp$ and $\flat$, and are defined by
+\begin{align}
+	\sharp:T^{*}\!M &\longrightarrow TM \notag \\
+	\mbi{\omega} &\longmapsto \mbi{g}^{-1}(\mbi{\omega},\cdot)\,,
+	%\mbi{\omega} &\longmapsto \mbi{\omega}^\sharp := \mbi{g}^{-1}(\mbi{\omega},\cdot)\,,
+\end{align}
+\begin{align}
+	\flat: TM &\longrightarrow T^{*}\!M \notag \\
+	\mbi{v} &\longmapsto \mbi{g}(\mbi{v},\cdot)\,,
+	%\mbi{v} &\longmapsto \mbi{v}^\flat:= \mbi{g}(\mbi{v},\cdot)\,,
+\end{align}
+where $\mbi{g}(\mbi{v},\cdot)$ is defined as the 1-rank tensor $\mbi{g}(\mbi{v},\cdot):TM\to\Re$, $\mbi{w}\mapsto \mbi{g}(\mbi{v},\mbi{w})$, and analogously for $\mbi{g}^{-1}(\mbi{\omega},\cdot)$. In index notation, the action of these isomorphism is equivalent to the process of rising or  lowering indices with the metric, such as in $v_a = g_{ab}v^b$.
+
+%The notations $\mbi{\omega}^\sharp$ and $\mbi{v}^{\flat}$ are used to denote the application of the isomorphisms to the 1-form $\mbi{\omega}$ and the vector $\mbi{v}$, respectively. 
+
+\noindent The metric tensor induces a dot product as
+\be
+	\mbi{u}\cdot \mbi{v} := \mbi{g}(\mbi{u},\mbi{v})\,.
+\ee
+
+\noindent The Levi-Civita tensor $\mbi{\epsilon}$ induces a cross product in the orthogonal space $E_u$ to some vector $\mbi{u}$ as
+\be	
+\mbi{v},\mbi{w}\in E_u\,, \quad \quad \mbi{v}\cross_u \mbi{w}:=\mbi{\epsilon}(\mbi{u},\mbi{v},\mbi{w},\cdot)^{\sharp}\,,
+\ee
+where $\mbi{v}\in E_u$ if $\mbi u\cdot \mbi{v} = 0$. If $\{\mbi{E}_a\}$ is a right-handed orthonormal basis with $\mbi{E}_0 = \mbi{u}$ then one can show that
+\be
+	\mbi{E}_i\cross_u\mbi{E}_j = \tensor{\varepsilon}{^k_i_j}\mbi{E}_k\,,
+\ee
+where $i,j,k\in\{1,2,3\}$, and where $\tensor{\varepsilon}{^k_i_j}$ are the Levi-Civita symbols, not to be confused with the components $\epsilon_{abcd}$ of the Levi-Civita tensor.
+
+\begin{center} \bf Derivatives \end{center}
+%\subsubsection*{Derivatives}
+The covariant derivative of a tensor $\mbi{T}$ in the direction of $\mbi{u}$ is denoted as $\nablau\mbi{T}$\,.
+
+\noindent The Fermi-Walker derivative is defined as
+\be
+	\Fermi_u\mbi{v} := \nablau \mbi{v} +  (\mbi{u}\cdot\mbi{v})\,\mbi{a} - (\mbi{a}\cdot\mbi{v})\,\mbi{u}\,.
+\ee
+A vector $\mbi{v}$ is said to be Fermi-Walker transported along the integral curves of $\mbi{u}$ if $\Fermi_u\mbi{v}=\mbi{0}$.
+
+\noindent The derivative with respect to an observer $\Obs$ with 4-velocity $\mbi{u}$, equipped with an orthonormal tetrad $\{\mbi{E}_a\}$, with $\mbi{E}_0=\mbi{u}$, is defined as
+\be
+	D_\Obs\,\mbi{v} := \frac{dv^a}{d\tau}\mbi{E}_a\,,
+\ee
+where $v^a$ are the components of $\mbi{v}$ in the tetrad's vector base $\{\mbi{E}_a\}$, and where $\frac{d}{d\tau}$ is the derivative with respect to the proper time $\tau$ of $\Obs$ defined as
+\be
+	\frac{df}{d\tau} := \nablau f= u^\mu\, \partial_\mu f\,.
+\ee
+
+
+\subsection{Gyroscopic precession}
+A gyroscope can be regarded as a spin-mass system whose spin evolves through the equation 
+\be
+\Fermi_u \mbi{s}=\mbi{N}\,,
+\ee
+where $\Fermi_u$ is the Fermi-Walker derivative relative to the 4-velocity $\mbi{u}$ of the system, $\mbi{s}$ is the spin vector of the system, and $\mbi{N}$ is the 4-torque on the spin. For a system of particles, the spin may correspond to the system's intrinsic angular momentum. In the absence of torques, a gyroscope's spin is Fermi-Walker transported along its worldline.
+
+A known identity relates the Fermi-Walker derivative $\Fermi_u$ to the derivative with respect to the observer $\Obs$ with 4-velocity $\mbi{u}$, equipped with the Frenet-Serret tetrad, and to the $4$-rotation $\wfs$ of the Frenet-Serret tetrad as
+\be
+	\Fermi_u\mbi{v} = D_\Obs\, \mbi{v} - \wfs \cross_u \mbi{v}\,.
+\ee
+The derivative $D_\Obs$ is defined as $D_\Obs\,\mbi{v}=\frac{dv^{(a)}}{d\tau}\mbi{e}_{(a)}$, where $v^{(a)}$ are the components of $\mbi{v}$ in the Frenet-Serret tetrad's base $\{\mbi{e}_{(a)}\}$, with $\mbi{e}_{(0)}=\mbi{u}$, and where $\frac{d}{d\tau}$ is the derivative with respect to the proper time $\tau$ of $\Obs$ defined as $\frac{df}{d\tau}:=\nabla_{u}f = u^\mu\,\partial_\mu f$. If a vector $\mbi{v}$ is Fermi-Walker transported along the integral curves of $\mbi{u}$, $\Fermi_u\mbi{v}=\mbi{0}$, then
+\be
+	D_\Obs\, \mbi{v} = \wfs \cross_u \mbi{v}\,,
+\ee
+so that $\mbi{v}$ appears to rotate with angular velocity $-\wfs$ relative to the observer $\Obs$. One may confirm this by noticing that in components this expression gives
+$\frac{dv^{(a)}}{d\tau} = \tensor{\varepsilon}{^{(a)}_{(b)}_{(c)}}\, \tensor{\omega}{_{\rm FS}^{(b)}}\,v^{(c)}$, with $\tensor{\varepsilon}{^{(a)}_{(b)}_{(c)}}$ being the levi-civita symbols.
+
+
+\subsection{The $q$-metric}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Objectives}
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{General objective}
+{\it To compute the precession frequency of a gyroscope moving in the spacetime of the $q$-metric and to relate it to the mass quadrupole of the $q$-metric.}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \subsection{Specific objectives}
+
+\begin{enumerate}
+	\item To describe in a coherent manner the gyroscopic precession in the context of the Frenet-Serret formalism.
+	\item To compute the Frenet-Serret parameters of curvature, first torsion, and second torsion, associated with a quasi-Killing congruence of curves.
+	\item To identify the contribution of the mass quadrupole to the precession frequency by expanding in a Taylor series in $q$.
+	\item To analyze the behavior of the precession frequency at the singularity $r=2m$ of the $q$-metric and at the position of circular null geodesics. 
+\end{enumerate}
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 \section{Methodology}
 
+\begin{enumerate}
+	%%%%% Specific objective 1
+	\item {\bf Specific objective 1: To describe in a coherent manner the gyroscopic precession in the context of the Frenet-Serret formalism.}
+	\begin{itemize}
+		\item[\A{1}] To obtain the 4-rotation $\wfs$ associated with the Frenet-Serret tetrad.
+		\item[\A{2}] To expand the vectors of the Fermi-Walker transported tetrad in the basis of the Frenet-Serret tetrad.
+		\item[\A{3}] To deduce the equation that relates the spatial part of the Fermi-Walker tetrad, the spatial part of the Frenet-Serret tetrad, and the 4-rotation $\wfs$.
+	\end{itemize}
+
+	%%%%% Specific objective 2
+	\item {\bf Specific objective 2: To compute the Frenet-Serret parameters of curvature, first torsion and second torsion, associated with a quasi-Killing congruence of curves.}
+	\begin{itemize}
+		\item[\A{4}] To consider a 4-velocity field $\mbi{u}$ as a linear combination of the Killing vectors of the $q$-metric with non-constant coefficients.
+		\item[\A{5}] To obtain the Frenet-Serret parameters using the formalism of Iyer and Vishveshwara \cite{iyer1993frenet}, which is based on the tensor $F_{ab}=u_{a;b}$, where the semicolon denotes covariant differentiation. %$\mbi{F}=\nabla\mbi{u}$
+	\end{itemize}
+
+	%%%%% Specific objective 3
+	\item {\bf Specific objective 3: To identify the contribution of the mass quadrupole to the precession frequency by expanding in a Taylor series in $q$.}
+	\begin{itemize}
+		\item[\A{6}] To obtain the expression of the precession frequency of the gyroscope $\Omega_{GP}$.
+		\item[\A{7}] To obtain the expression of $\Omega_{GP}$ for different values of $q$ such as $q=0,1$.
+		\item[\A{8}] To obtain the first contribution of the mass quadrupole to the precession frequency by expanding $\Omega_{GP}$ in a Taylor series truncated at first order in $q$.
+	\end{itemize}			
+	
+
+	%%%%% Specific objective 4
+	\item {\bf Specific objective 4: To analyze the behavior of the precession frequency at the singularity $r=2m$ of the $q$-metric and at the position of circular null geodesics.}
+	\begin{itemize}
+		\item[\A{9}] To compute the value of $\Omega_{GP}$ at the positions of interest.
+		\item[\A{10}] To plot $\Omega_{GP}$ as a function of the spacetime coordinates $r$ and $\theta$, and to identify its behavior at the positions of interest.
+	\end{itemize}
+\end{enumerate}
+
+
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
-\section{Schedule of activities}
+%\newpage
+%\section{Schedule of activities}
+%For the development of this research work, a time of approximately 10 months is estimated from the delivery of this document. To this end, the following schedule of activities is
+%proposed:
+%
+%\begin{table}[h!]
+% 	\centering
+%	\begin{tabular}{*{11}{|c}|}
+%	\hline
+%%	& \multicolumn{3}{c|}{Specific objective 1} & \multicolumn{2}{c|}{Specific objective 2} & \multicolumn{3}{c|}{Specific objective 3} & \multicolumn{2}{c|}{Specific objective 4} \\ \hline
+%	& \multicolumn{3}{c|}{Specific} & \multicolumn{2}{c|}{Specific} & \multicolumn{3}{c|}{Specific} & \multicolumn{2}{c|}{Specific} \\
+%	& \multicolumn{3}{c|}{objective 1} & \multicolumn{2}{c|}{objective 2} & \multicolumn{3}{c|}{objective 3} & \multicolumn{2}{c|}{objective 4} \\ \hline
+%
+%	Month / Activity&\A{1}	&\A{2} 	&\A{3} 	&\A{4}	&\A{5} 	&\A{6} 	&\A{7} 	&\A{8} 	&\A{9} 	& \A{10}	\\ \hline
+%	February		&	X	&	X	&  X   	&      	&      	&      	&      	&		&		&	\\ \hline
+%	March 	    	&    	&     	&  X   	&     	&     	&      	&      	&		&		&	\\ \hline
+%	April  			&     	&     	&      	&  X   	&  X   	&      	&      	&		&		&	\\ \hline
+%	May				&     	&     	&     	&    	&  X   	&     	&      	&		&		&	\\ \hline
+%	June	   		&     	&      	&      	&      	&     	&   X 	&     	&		&		&	\\ \hline
+%	July	 		&     	&		&      	&      	&      	&   X  	&     	&		&		&	\\ \hline
+%	August 			&     	&      	&      	&      	&      	&      	&   X 	&	X	&		&	\\ \hline
+%	September 		&     	&      	&      	&      	&      	&      	&     	&	X	&		&	\\ \hline
+%	October 		&     	&      	&      	&      	&      	&      	&     	&		&	X	& X	\\ \hline
+%	November 		&     	&      	&     	&      	&      	&      	&     	&		&		& X \\ \hline
+%	\end{tabular}
+%\end{table}
+%This schedule can be modified depending on the development and complications that each activity may present.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
