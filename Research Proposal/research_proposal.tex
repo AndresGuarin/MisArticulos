@@ -94,7 +94,7 @@ Gyroscopes may also be useful for interstellar navigation. This raises the quest
 
 Because of that, gyroscopes could be used to measure the effects of such phenomena, including frame-dragging. To date, it remains an open question whether Einstein’s theory of gravity accurately describes frame-dragging. Although more measurements have recently been made, additional experiments are needed to reduce measurement uncertainty. This is an important problem because it is related to the validity of Einstein’s theory of gravity. \\
 
-On the other hand, mass multipoles are important in physics because they characterize the mass deformation of astrophysical objects. Realistic objects should have non-vanishing multipoles higher than the mass monopole due to natural deformations and rotation. These multipoles beyond [JG3.1]the monopole represent deviations of the mass distribution from ideal spherical symmetry. To describe the exterior field of compact objects other than black holes, such as neutron stars and white dwarfs, it has been suggested that multipoles beyond the monopole are needed. Physically, one expects the mass dipole to vanish under an appropriate coordinate transformation that, in the Newtonian limit, corresponds to placing the origin of spatial coordinates at the center of mass. Hence, the mass quadrupole is the next physically interesting multipole after the monopole.
+On the other hand, mass multipoles are important in physics because they characterize the mass deformation of astrophysical objects. Realistic objects should have non-vanishing multipoles higher than the mass monopole due to natural deformations and rotation. These multipoles beyond the monopole represent deviations of the mass distribution from ideal spherical symmetry. To describe the exterior field of compact objects other than black holes, such as neutron stars and white dwarfs, it has been suggested that multipoles beyond the monopole are needed. Physically, one expects the mass dipole to vanish under an appropriate coordinate transformation that, in the Newtonian limit, corresponds to placing the origin of spatial coordinates at the center of mass. Hence, the mass quadrupole is the next physically interesting multipole after the monopole. \\
 
 As a particular case of a stationary spacetime with a quadrupole moment, one has the $q$-metric. This metric can be considered as the simplest exact solution to the Einstein field equations with a mass quadrupole. It represents a static, axially symmetric spacetime whose associated mass multipoles depend on $q$. This metric has only the mass monopole and mass quadrupole as independent multipoles. For $q\to 0$, the quadrupole vanishes, and only the monopole survives; all higher multipoles are zero. In this case, the metric reduces to the Schwarzschild metric. For small deviations of $q$ from $0$, one obtains the field of an object with a small mass quadrupole deformation. Thus, the $q$-metric could be useful to study the first-order effects of quadrupole deformation on the gyroscope precession frequency. \\
 
@@ -179,12 +179,18 @@ where $v^a$ are the components of $\mbi{v}$ in the tetrad's basis $\{\mbi{E}_a\}
 \ee
 
 \subsection{Gyroscope precession}
-%%%%%%%%%% HABLAR SOBRE GYROSCOPÍOS EN FÍSICA NEWTONIANA Y EN REL. ESPECIAL
-A gyroscope can be regarded as a system characterized by a spin vector $\mbi{s}$ that evolves through the equation \cite{straumann2004general}
+In Newtonian mechanics, a gyroscope can be considered as a spinning object with two of its three moments of inertia equal, and whose center of rotation coincides with its center of gravity. Typically, a gyroscope is mounted in gimbals so that its rotation axis can move freely about the three perpendicular spatial axes. In the absence of torques, the gyroscope's rotation axis keeps its direction fixed relative to an inertial observer, a phenomenon called gyroscopic inertia. To an accelerated observer, the gyroscope's rotation axis would appear to change, allowing a ship or plane to identify its roll, pitch, and attitude, depending on the case.
+
+However, in special relativity, the gyroscope's rotation axis would change even for an inertial observer due to Thomas precession. This effect arises because the composition of two Lorentz boosts in different directions is not a boost but a boost preceded by a spatial rotation, the Thomas rotation. In this sense, Thomas precession is expected for a gyroscope moving along an accelerated trajectory. 
+
+Mathematically, the Fermi-Walker derivative elegantly describes the change in the gyroscope's rotation axis. It is more convenient to work with the gyroscope's intrinsic angular momentum, its spin $\mbi{s}$, which is collinear with the gyroscope's rotation axis. The evolution law for the spin of a system takes the form $\Fermi_u \mbi{s}=\mbi{N}$, where $\Fermi_u$ is the Fermi-Walker derivative relative to the system's 4-velocity $\mbi{u}$, and $\mbi{N}$ is the $4$-torque on the spin. Hence, in a torque-free gyroscope, the spin is Fermi-Walker transported along the gyroscope's worldline. The Fermi-Walker transport encapsulates the Thomas precession experienced by the gyroscope. 
+
+
+In general relativity, the dynamic law of the gyroscope's spin $\mbi{s}$ remains the same \cite{straumann2004general}
 \be
 \Fermi_u \mbi{s}=\mbi{N}\,,
 \ee
-where $\Fermi_u$ is the Fermi-Walker derivative relative to the 4-velocity $\mbi{u}$ of the system, and $\mbi{N}$ is the 4-torque on the spin. For a system of particles, the spin may correspond to the system's intrinsic angular momentum. In the absence of torques, a gyroscope's spin is Fermi-Walker transported along its worldline.
+where $\mbi{u}$ is the gyroscope's $4$-velocity and $\mbi{N}$ is the $4$-torque on the spin, as before. In contrast to the previous case, the affine connection $\nabla$ involved in the definition of $\Fermi_u$ is no longer derived from the Minkowskian metric but from a general curved metric $\mbi{g}$. As before, in the absence of torques, the gyroscope's spin is Fermi-Walker transported along its worldline. This transport should include the known precession effects in general relativity: Thomas precession, Lense-Thirring precession (frame-dragging), and geodetic precession.
 
 A known identity relates the Fermi-Walker derivative $\Fermi_u$ to the derivative with respect to the observer equipped with the Frenet-Serret tetrad and with 4-velocity $\mbi{u}$, and to the $4$-rotation $\wfs$ of the Frenet-Serret tetrad as \cite{straumann2004general, gourgoulhon2013special}
 \be
@@ -341,7 +347,7 @@ proposed:
 	August	 		&     	&      	&     	&      	&      	&      	&     	&		&		& X \\ \hline
 	\end{tabular}
 \end{table}
-This schedule can be modified depending on the development and complications that each activity may present.
+%This schedule can be modified depending on the development and complications that each activity may present.
 
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
 %%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%%
